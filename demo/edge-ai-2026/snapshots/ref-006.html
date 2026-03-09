@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adaptive Mixed-Precision Quantization for Transformer Architectures</title>
+  <style>
+    body { font-family: 'Computer Modern', Georgia, serif; max-width: 680px; margin: 40px auto; padding: 0 20px; color: #111; line-height: 1.8; background: #fff; }
+    h1 { font-size: 1.5rem; text-align: center; margin-bottom: 8px; }
+    .authors { text-align: center; color: #444; margin-bottom: 4px; }
+    .affiliation { text-align: center; color: #888; font-size: 0.85rem; margin-bottom: 24px; }
+    .abstract { background: #f5f5f5; padding: 16px 20px; border-radius: 4px; margin: 24px 0; }
+    .abstract h3 { margin-bottom: 8px; font-size: 1rem; }
+    .section { margin-top: 32px; }
+    .section h2 { font-size: 1.2rem; border-bottom: 1px solid #ddd; padding-bottom: 4px; }
+    .equation { text-align: center; padding: 16px; margin: 16px 0; background: #fafafa; border-radius: 4px; font-family: monospace; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9rem; }
+    th, td { border: 1px solid #ccc; padding: 6px 10px; }
+    th { background: #e9ecef; }
+  </style>
+</head>
+<body>
+  <h1>Adaptive Mixed-Precision Quantization for Transformer Architectures</h1>
+  <div class="authors">Wei Chen, Yuki Tanaka, Priya Sharma, James Liu</div>
+  <div class="affiliation">Google Research &bull; February 2026 &bull; arXiv:2026.05678</div>
+
+  <div class="abstract">
+    <h3>Abstract</h3>
+    <p>We present a novel adaptive mixed-precision quantization framework that automatically determines optimal bit-width allocation for each layer in transformer architectures. <mark>We demonstrate that adaptive mixed-precision quantization achieves near-lossless compression ratios of 8:1</mark> across a wide range of transformer architectures, including BERT, GPT, and Vision Transformers. Our method outperforms uniform quantization by 12-18% in accuracy preservation while maintaining comparable inference speed.</p>
+  </div>
+
+  <div class="section">
+    <h2>1. Introduction</h2>
+    <p>The deployment of large transformer models on edge devices remains challenging due to their substantial memory and computational requirements. Current quantization approaches typically apply uniform bit-width across all layers, ignoring the varying sensitivity of different architectural components.</p>
+    <p>In this work, we propose AdaptQ, a framework that leverages second-order sensitivity analysis to determine layer-wise optimal quantization precision, achieving compression ratios of 8:1 with less than 2% accuracy degradation.</p>
+  </div>
+
+  <div class="section">
+    <h2>2. Method</h2>
+    <p>Our approach consists of three stages:</p>
+    <ol>
+      <li><strong>Sensitivity Analysis</strong>: Compute Hessian-based sensitivity scores for each layer</li>
+      <li><strong>Bit-Width Allocation</strong>: Solve constrained optimization for optimal precision distribution</li>
+      <li><strong>Fine-Tuning</strong>: Knowledge distillation with quantization-aware training</li>
+    </ol>
+    <div class="equation">
+      min Σ L(f(x; θ_q), f(x; θ)) s.t. Σ b_i × p_i ≤ B_target
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>3. Results</h2>
+    <table>
+      <tr><th>Model</th><th>Original Size</th><th>Compressed</th><th>Ratio</th><th>Accuracy</th></tr>
+      <tr><td>BERT-Large</td><td>1.3 GB</td><td>162 MB</td><td>8.0:1</td><td>98.2%</td></tr>
+      <tr><td>GPT-2 Medium</td><td>1.5 GB</td><td>195 MB</td><td>7.7:1</td><td>97.8%</td></tr>
+      <tr><td>ViT-Large</td><td>1.2 GB</td><td>148 MB</td><td>8.1:1</td><td>98.5%</td></tr>
+      <tr><td>LLaMA-7B</td><td>13 GB</td><td>1.7 GB</td><td>7.6:1</td><td>97.1%</td></tr>
+    </table>
+  </div>
+
+  <p style="margin-top: 40px; color: #888; font-size: 0.8rem; text-align: center;">
+    Demo snapshot for Source-Linked Viewer prototype
+  </p>
+</body>
+</html>

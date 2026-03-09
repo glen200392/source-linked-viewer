@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Source-Linked Report Viewer</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body class="index-page">
+  <div class="index-container">
+    <h1>Source-Linked Report Viewer</h1>
+    <p class="subtitle">AI 研究報告 × 來源即時對照</p>
+
+    {% if reports %}
+    <div class="report-list">
+      {% for r in reports %}
+      <a href="/report/{{ r.id }}" class="report-card">
+        <h2>{{ r.title }}</h2>
+        <div class="report-meta">
+          <span>{{ r.generated_at[:10] if r.generated_at else 'N/A' }}</span>
+          {% if r.stats %}
+          <span>{{ r.stats.total_citations }} 引用</span>
+          {% endif %}
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="empty-state">
+      <p>尚無報告。請將報告放入 <code>demo/</code> 目錄。</p>
+      <p>每份報告需包含 <code>report.md</code> 和 <code>citation_map.json</code>。</p>
+    </div>
+    {% endif %}
+  </div>
+</body>
+</html>

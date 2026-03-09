@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Waymo 6th Gen: Moving 95% of Inference to the Edge</title>
+  <style>
+    body { font-family: -apple-system, sans-serif; max-width: 740px; margin: 40px auto; padding: 0 24px; color: #202124; line-height: 1.7; background: #fff; }
+    h1 { font-size: 1.8rem; color: #1a73e8; }
+    .meta { color: #888; font-size: 0.85rem; margin-bottom: 32px; }
+    .arch-diagram { background: #f8f9fa; border: 1px solid #dadce0; border-radius: 8px; padding: 24px; margin: 24px 0; font-family: monospace; font-size: 0.85rem; white-space: pre; line-height: 1.6; }
+    .highlight-box { background: #e8f0fe; border: 1px solid #1a73e8; border-radius: 8px; padding: 16px 20px; margin: 24px 0; }
+  </style>
+</head>
+<body>
+  <h1>Waymo 6th Generation: Moving 95% of Inference to the Edge</h1>
+  <div class="meta">Waymo Research &bull; February 2026 &bull; Technical Report</div>
+
+  <h2>Abstract</h2>
+  <p>In this technical report, we describe how <mark>our sixth-generation autonomous driving system processes 95% of inference workloads on the vehicle's edge computing units</mark>, with only 5% of critical decisions requiring cloud support. This represents a fundamental shift from our previous architecture, which relied on cloud computing for approximately 40% of inference tasks.</p>
+
+  <div class="highlight-box">
+    <strong>Key Achievement:</strong> 95% on-vehicle inference with 99.99% availability, achieving an average decision latency of 4.2ms — well within the 10ms safety threshold.
+  </div>
+
+  <h2>Architecture Overview</h2>
+  <div class="arch-diagram">
+┌─────────────────────────────────────────────┐
+│           Waymo 6th Gen Vehicle              │
+│                                              │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐  │
+│  │ Perception│  │ Planning │  │ Control  │  │
+│  │ (Edge)   │→│ (Edge)   │→│ (Edge)   │  │
+│  │ 45% load │  │ 35% load │  │ 15% load │  │
+│  └──────────┘  └──────────┘  └──────────┘  │
+│                     ↕ 5%                     │
+│              ┌──────────────┐               │
+│              │ Cloud Backup │               │
+│              │ (Edge cases) │               │
+│              └──────────────┘               │
+└─────────────────────────────────────────────┘</div>
+
+  <h2>Performance Metrics</h2>
+  <ul>
+    <li><strong>Decision latency:</strong> 4.2ms average (vs. 12ms in 5th gen)</li>
+    <li><strong>Compute efficiency:</strong> 3.2 TOPS/Watt</li>
+    <li><strong>Redundancy:</strong> Triple-redundant edge compute units</li>
+    <li><strong>Cloud dependency:</strong> Reduced from 40% to 5%</li>
+  </ul>
+
+  <p style="margin-top: 40px; color: #888; font-size: 0.8rem;">
+    Demo snapshot for Source-Linked Viewer prototype &bull; Waymo Research
+  </p>
+</body>
+</html>

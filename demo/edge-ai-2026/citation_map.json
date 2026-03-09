@@ -1,0 +1,358 @@
+{
+  "$schema": "source-linked-viewer/citation-map/v1",
+  "title": "Edge AI 技術趨勢研究報告（2026 Q1）",
+  "report_id": "edge-ai-2026",
+  "generated_at": "2026-03-09T14:30:00+08:00",
+  "generator": "research-orchestrator/v2",
+
+  "citations": [
+    {
+      "id": "ref-001",
+      "index": 1,
+      "source": {
+        "url": "https://www.gartner.com/en/articles/edge-ai-predictions-2026",
+        "title": "Gartner Predicts 60% of Enterprise AI Will Run at the Edge by 2028",
+        "type": "webpage",
+        "accessed_at": "2026-03-08T09:15:00Z",
+        "author": "Gartner Research",
+        "publication_date": "2026-02"
+      },
+      "snapshot": {
+        "file": "snapshots/ref-001.html",
+        "format": "singlefile-html",
+        "size_bytes": 312000,
+        "hash": "sha256:demo-placeholder"
+      },
+      "anchors": [
+        {
+          "report_location": {
+            "section": "摘要",
+            "paragraph": 1,
+            "text_fragment": "到 2028 年將有超過 60% 的企業 AI 工作負載部署在邊緣端"
+          },
+          "source_selectors": [
+            {
+              "type": "TextQuoteSelector",
+              "exact": "By 2028, more than 60% of enterprise AI workloads will be deployed at the edge",
+              "prefix": "Our latest forecast shows that ",
+              "suffix": ", up from less than 15% in 2024."
+            },
+            {
+              "type": "TextPositionSelector",
+              "start": 2456,
+              "end": 2532
+            }
+          ]
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-002",
+      "index": 2,
+      "source": {
+        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "title": "NVIDIA GTC 2026 Keynote: Next-Gen Edge Inference Chips",
+        "type": "video",
+        "accessed_at": "2026-03-07T14:00:00Z",
+        "author": "NVIDIA",
+        "publication_date": "2026-03"
+      },
+      "snapshot": {
+        "file": "media/ref-002-thumb.png",
+        "format": "screenshot"
+      },
+      "anchors": [
+        {
+          "report_location": {
+            "section": "摘要",
+            "paragraph": 1,
+            "text_fragment": "NVIDIA 在 GTC 2026 發表的新一代邊緣推論晶片"
+          },
+          "source_selectors": [
+            {
+              "type": "MediaTimeSelector",
+              "start": 1845,
+              "end": 1920
+            }
+          ]
+        }
+      ],
+      "media": {
+        "platform": "youtube",
+        "video_id": "dQw4w9WgXcQ",
+        "timestamp": 1845
+      }
+    },
+    {
+      "id": "ref-003",
+      "index": 3,
+      "source": {
+        "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/edge-ai-market-outlook-2026",
+        "title": "Edge AI Market Outlook: From $38B to $107B by 2028",
+        "type": "webpage",
+        "accessed_at": "2026-03-06T11:30:00Z",
+        "author": "McKinsey & Company",
+        "publication_date": "2026-01"
+      },
+      "snapshot": {
+        "file": "snapshots/ref-003.html",
+        "format": "singlefile-html",
+        "size_bytes": 458000,
+        "hash": "sha256:demo-placeholder"
+      },
+      "anchors": [
+        {
+          "report_location": {
+            "section": "1.1",
+            "paragraph": 1,
+            "text_fragment": "全球 Edge AI 市場規模在 2025 年達到 $38.2B"
+          },
+          "source_selectors": [
+            {
+              "type": "TextQuoteSelector",
+              "exact": "The global Edge AI market reached $38.2 billion in 2025",
+              "prefix": "According to our analysis, ",
+              "suffix": " and is projected to reach $107.5 billion"
+            }
+          ]
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-004",
+      "index": 4,
+      "source": {
+        "url": "https://arxiv.org/abs/2026.01234",
+        "title": "Ultra-Low Latency Requirements for Real-Time Edge AI Applications",
+        "type": "webpage",
+        "accessed_at": "2026-03-05T16:45:00Z",
+        "author": "Li et al.",
+        "publication_date": "2026-01"
+      },
+      "snapshot": {
+        "file": "snapshots/ref-004.html",
+        "format": "singlefile-html",
+        "size_bytes": 189000,
+        "hash": "sha256:demo-placeholder"
+      },
+      "anchors": [
+        {
+          "report_location": {
+            "section": "1.1",
+            "paragraph": 2,
+            "text_fragment": "推論延遲低於 10ms"
+          },
+          "source_selectors": [
+            {
+              "type": "TextQuoteSelector",
+              "exact": "inference latency below 10 milliseconds",
+              "prefix": "applications require end-to-end ",
+              "suffix": " to maintain real-time responsiveness"
+            }
+          ]
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-005",
+      "index": 5,
+      "source": {
+        "url": "https://commission.europa.eu/law/law-topic/data-protection/data-protection-eu_en",
+        "title": "Data Protection in the EU — GDPR and Edge Computing Implications",
+        "type": "webpage",
+        "accessed_at": "2026-03-04T10:00:00Z",
+        "author": "European Commission",
+        "publication_date": "2025-12"
+      },
+      "snapshot": {
+        "file": "snapshots/ref-005.html",
+        "format": "singlefile-html",
+        "size_bytes": 267000,
+        "hash": "sha256:demo-placeholder"
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-006",
+      "index": 6,
+      "source": {
+        "url": "https://arxiv.org/abs/2026.05678",
+        "title": "Adaptive Mixed-Precision Quantization for Transformer Architectures",
+        "type": "pdf",
+        "accessed_at": "2026-03-03T14:20:00Z",
+        "author": "Chen et al.",
+        "publication_date": "2026-02"
+      },
+      "snapshot": {
+        "file": "snapshots/ref-006.html",
+        "format": "singlefile-html",
+        "size_bytes": 523000,
+        "hash": "sha256:demo-placeholder"
+      },
+      "anchors": [
+        {
+          "report_location": {
+            "section": "2.1",
+            "paragraph": 1,
+            "text_fragment": "混合精度量化方法，可在保持 98% 模型精度的前提下，將模型大小壓縮至原始的 1/8"
+          },
+          "source_selectors": [
+            {
+              "type": "TextQuoteSelector",
+              "exact": "adaptive mixed-precision quantization achieves near-lossless compression ratios of 8:1",
+              "prefix": "We demonstrate that ",
+              "suffix": " across a wide range of transformer architectures"
+            }
+          ]
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-007",
+      "index": 7,
+      "source": {
+        "url": "https://developer.apple.com/wwdc26/sessions/federated-learning",
+        "title": "WWDC 2026: Federated Learning for On-Device Intelligence",
+        "type": "video",
+        "accessed_at": "2026-03-02T08:30:00Z",
+        "author": "Apple",
+        "publication_date": "2026-06"
+      },
+      "snapshot": {
+        "file": "media/ref-007-thumb.png",
+        "format": "screenshot"
+      },
+      "anchors": [],
+      "media": {
+        "platform": "apple",
+        "video_id": "wwdc26-fl",
+        "timestamp": 420
+      }
+    },
+    {
+      "id": "ref-008",
+      "index": 8,
+      "source": {
+        "url": "https://github.com/meta-llama/llama4-edge",
+        "title": "Meta Llama 4 Edge — Optimized LLMs for Edge Devices",
+        "type": "webpage",
+        "accessed_at": "2026-03-01T12:00:00Z",
+        "author": "Meta AI",
+        "publication_date": "2026-02"
+      },
+      "snapshot": {
+        "file": "snapshots/ref-008.html",
+        "format": "singlefile-html",
+        "size_bytes": 198000,
+        "hash": "sha256:demo-placeholder"
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-009",
+      "index": 9,
+      "source": {
+        "url": "https://www2.deloitte.com/insights/us/en/industry/manufacturing/edge-ai-smart-factory.html",
+        "title": "Smart Factories: How Edge AI Reduces Downtime by 35%",
+        "type": "webpage",
+        "accessed_at": "2026-02-28T15:45:00Z",
+        "author": "Deloitte Insights",
+        "publication_date": "2026-01"
+      },
+      "snapshot": {
+        "file": "snapshots/ref-009.html",
+        "format": "singlefile-html",
+        "size_bytes": 345000,
+        "hash": "sha256:demo-placeholder"
+      },
+      "anchors": [
+        {
+          "report_location": {
+            "section": "3.1",
+            "paragraph": 1,
+            "text_fragment": "降低 35% 的停機時間成本，並提升 20% 的生產效率"
+          },
+          "source_selectors": [
+            {
+              "type": "TextQuoteSelector",
+              "exact": "manufacturers adopting Edge AI reported an average 35% reduction in downtime costs and 20% improvement in production efficiency",
+              "prefix": "Our survey of 500+ manufacturers found that ",
+              "suffix": " compared to cloud-only AI deployments."
+            }
+          ]
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-010",
+      "index": 10,
+      "source": {
+        "url": "https://www.foxconn.com/en/press-releases/2026/ai-inspection-shenzhen",
+        "title": "Foxconn Deploys AI-Powered Quality Inspection in Shenzhen Factory",
+        "type": "webpage",
+        "accessed_at": "2026-02-27T09:15:00Z",
+        "author": "Foxconn Technology Group",
+        "publication_date": "2026-01"
+      },
+      "snapshot": {
+        "file": "snapshots/ref-010.html",
+        "format": "singlefile-html",
+        "size_bytes": 156000,
+        "hash": "sha256:demo-placeholder"
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-011",
+      "index": 11,
+      "source": {
+        "url": "https://waymo.com/research/sixth-gen-computing-architecture",
+        "title": "Waymo 6th Gen: Moving 95% of Inference to the Edge",
+        "type": "webpage",
+        "accessed_at": "2026-02-26T11:30:00Z",
+        "author": "Waymo Research",
+        "publication_date": "2026-02"
+      },
+      "snapshot": {
+        "file": "snapshots/ref-011.html",
+        "format": "singlefile-html",
+        "size_bytes": 412000,
+        "hash": "sha256:demo-placeholder"
+      },
+      "anchors": [
+        {
+          "report_location": {
+            "section": "3.2",
+            "paragraph": 1,
+            "text_fragment": "95% 的推論工作負載移至車載邊緣運算單元"
+          },
+          "source_selectors": [
+            {
+              "type": "TextQuoteSelector",
+              "exact": "our sixth-generation autonomous driving system processes 95% of inference workloads on the vehicle's edge computing units",
+              "prefix": "In this technical report, we describe how ",
+              "suffix": ", with only 5% of critical decisions requiring cloud support."
+            }
+          ]
+        }
+      ],
+      "media": null
+    }
+  ],
+
+  "stats": {
+    "total_citations": 11,
+    "by_type": { "webpage": 8, "pdf": 1, "video": 2 },
+    "snapshots_available": 9,
+    "snapshots_failed": 2,
+    "avg_anchors_per_citation": 0.7
+  }
+}
