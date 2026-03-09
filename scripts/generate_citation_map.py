@@ -44,7 +44,30 @@ from urllib.parse import urlparse
 
 
 def extract_citations_from_markdown(md_text: str) -> list[dict]:
-    """Extract all [n] or [@n] citation references with context and nearby URLs."""
+    """Extract citations from markdown, supporting multiple formats.
+
+    Supported formats:
+      1. [n] / [@n] — numeric academic-style citations
+      2. > 來源：[Title](URL) — blockquote source lines (ChatGPT / manual style)
+      3. [Title](URL) inline links in reference sections
+
+    Returns a unified list regardless of input format.
+    """
+    # Try numeric [n] first
+    numeric = _extract_numeric_citations(md_text)
+    if numeric:
+        return numeric
+
+    # Fallback: extract inline source links (> 來源：pattern + reference sections)
+    inline = _extract_inline_source_citations(md_text)
+    if inline:
+        return inline
+
+    return []
+
+
+def _extract_numeric_citations(md_text: str) -> list[dict]:
+    """Extract [n] or [@n] citation references with context and nearby URLs."""
     citations = []
     seen = set()
 
@@ -53,10 +76,6 @@ def extract_citations_from_markdown(md_text: str) -> list[dict]:
     lines = md_text.split("\n")
 
     # First pass: collect all URLs in the document associated with references
-    # Common patterns:
-    #   [1]: https://...           (reference-style links)
-    #   [text](https://...) [1]    (inline link near citation)
-    #   [1](https://...)           (citation as link)
     ref_urls: dict[int, str] = {}
     ref_titles: dict[int, str] = {}
 
@@ -91,15 +110,12 @@ def extract_citations_from_markdown(md_text: str) -> list[dict]:
                 continue
             seen.add(index)
 
-            # Extract surrounding text for context
             start = max(0, match.start() - 50)
             end = min(len(line), match.end() + 50)
             context = line[start:end].strip()
 
-            # Try to find a nearby URL on the same line
             nearby_url = ref_urls.get(index)
             if not nearby_url:
-                # Look for any URL on this line or surrounding lines
                 search_range = "\n".join(lines[max(0, line_num - 1):line_num + 2])
                 url_matches = re.findall(r"https?://[^\s\)\"'>]+", search_range)
                 if url_matches:
@@ -115,6 +131,89 @@ def extract_citations_from_markdown(md_text: str) -> list[dict]:
             })
 
     return sorted(citations, key=lambda c: c["index"])
+
+
+def _extract_inline_source_citations(md_text: str) -> list[dict]:
+    """Extract citations from inline markdown links.
+
+    Detects patterns like:
+      > 來源：[Title](URL)、[Title2](URL2)
+      > Source: [Title](URL)
+      **來源**：[Title](URL)
+      - [Title](URL)  (in reference sections)
+    """
+    citations = []
+    seen_urls: set[str] = set()
+    index = 0
+
+    current_section = ""
+    current_paragraph = 0
+    lines = md_text.split("\n")
+    in_reference_section = False
+
+    for line_num, line in enumerate(lines):
+        stripped = line.strip()
+
+        if match := re.match(r"^(#{1,3})\s+(.+)", stripped):
+            heading_level = len(match.group(1))
+            current_section = match.group(2).strip()
+            current_paragraph = 0
+            # Detect reference/bibliography sections
+            ref_keywords = ["參考", "文獻", "reference", "bibliography", "sources", "來源"]
+            is_ref = any(k in current_section.lower() for k in ref_keywords)
+            if is_ref:
+                in_reference_section = True
+            elif heading_level <= 2:
+                # Only a top-level heading (## or #) exits the reference section
+                # Sub-headings (###) within a reference section are preserved
+                in_reference_section = False
+            continue
+
+        if stripped == "":
+            current_paragraph += 1
+            continue
+
+        # Check if this line is a source citation line
+        is_source_line = bool(re.match(r"^>\s*來源[：:]|^>\s*[Ss]ource[：:]|^\*\*來源\*\*[：:]", stripped))
+
+        # In reference sections, any line with links counts
+        # Also match list items with links: - [Title](URL)
+        has_link = bool(re.search(r"\[.+?\]\(https?://", stripped))
+        should_extract = is_source_line or (in_reference_section and has_link)
+
+        if not should_extract:
+            continue
+
+        # Extract all [Title](URL) from this line
+        for m in re.finditer(r"\[([^\]]+)\]\((https?://[^\)]+)\)", line):
+            title = m.group(1).strip()
+            url = m.group(2).strip()
+
+            if url in seen_urls:
+                continue
+            seen_urls.add(url)
+
+            index += 1
+
+            # Get context: the preceding non-empty, non-source line
+            context = ""
+            for prev_i in range(line_num - 1, max(0, line_num - 5), -1):
+                prev = lines[prev_i].strip()
+                if prev and not prev.startswith(">") and not prev.startswith("#"):
+                    context = prev[:100]
+                    break
+
+            citations.append({
+                "index": index,
+                "section": current_section,
+                "paragraph": current_paragraph,
+                "context": context,
+                "auto_url": url,
+                "auto_title": title,
+                "source_line": stripped[:100],
+            })
+
+    return citations
 
 
 def guess_source_type(url: str) -> str:

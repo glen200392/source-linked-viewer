@@ -16,15 +16,52 @@
       </div>
       <div class="index-stats">
         <span class="stat-item">{{ reports|length }} 份報告</span>
+        <button class="upload-btn" id="upload-toggle" title="上傳報告">+ 匯入報告</button>
       </div>
     </div>
 
-    <!-- Filter bar -->
+    <!-- Upload area (hidden by default) -->
+    <div class="upload-area" id="upload-area" style="display:none">
+      <div class="upload-dropzone" id="upload-dropzone">
+        <p>拖曳 .md 檔案到此處，或 <label for="upload-file" class="upload-label">選擇檔案</label></p>
+        <input type="file" id="upload-file" accept=".md" style="display:none">
+      </div>
+      <div class="upload-options">
+        <input type="text" id="upload-tags" placeholder="標籤（逗號分隔）" class="upload-input">
+        <select id="upload-category" class="upload-input">
+          <option value="未分類">未分類</option>
+          <option value="技術研究">技術研究</option>
+          <option value="AI 治理">AI 治理</option>
+          <option value="資料治理">資料治理</option>
+          <option value="法規監控">法規監控</option>
+          <option value="系統部署">系統部署</option>
+          <option value="週報">週報</option>
+        </select>
+        <button id="upload-submit" class="upload-submit" disabled>匯入</button>
+      </div>
+      <div id="upload-status" class="upload-status"></div>
+    </div>
+
     {% if reports %}
+    <!-- Filter & Sort bar -->
     <div class="filter-bar">
-      <!-- Search -->
-      <div class="search-box">
-        <input type="text" id="search-input" placeholder="搜尋報告標題或摘要..." class="search-input">
+      <div class="filter-bar-top">
+        <!-- Search -->
+        <div class="search-box">
+          <input type="text" id="search-input" placeholder="搜尋報告標題或摘要..." class="search-input">
+        </div>
+
+        <!-- Sort -->
+        <div class="sort-controls">
+          <span class="filter-label">排序</span>
+          <select id="sort-select" class="sort-select">
+            <option value="date-desc">報告日期（新→舊）</option>
+            <option value="date-asc">報告日期（舊→新）</option>
+            <option value="title-asc">標題 A→Z</option>
+            <option value="title-desc">標題 Z→A</option>
+            <option value="updated-desc">最近更新</option>
+          </select>
+        </div>
       </div>
 
       <!-- Category filter -->
@@ -60,7 +97,9 @@
          data-category="{{ r.category }}"
          data-tags="{{ r.tags|join(',') }}"
          data-title="{{ r.title }}"
-         data-summary="{{ r.summary }}">
+         data-summary="{{ r.summary }}"
+         data-report-date="{{ r.report_date }}"
+         data-updated-at="{{ r.updated_at }}">
         <div class="card-header">
           <h2>{{ r.title }}</h2>
           <span class="status-badge status-{{ r.status }}">{{ r.status }}</span>
@@ -69,14 +108,12 @@
         <p class="card-summary">{{ r.summary }}</p>
         {% endif %}
         <div class="card-meta">
-          <span class="meta-date">{{ r.generated_at[:10] if r.generated_at else 'N/A' }}</span>
+          <span class="meta-date" title="報告完成日期">{{ r.report_date or 'N/A' }}</span>
           <span class="meta-category">{{ r.category }}</span>
           {% if r.stats %}
           <span class="meta-citations">{{ r.stats.total_citations }} 引用</span>
           {% endif %}
-          {% if r.import_method %}
-          <span class="meta-method">via {{ r.import_method }}</span>
-          {% endif %}
+          <span class="meta-updated" title="最後更新">↻ {{ r.updated_at }}</span>
         </div>
         {% if r.tags %}
         <div class="card-tags">
@@ -99,24 +136,103 @@
 
     {% else %}
     <div class="empty-state">
-      <p>尚無報告。</p>
-      <p>使用以下指令匯入：</p>
-      <pre><code>python scripts/smart_import.py report.md --output demo/my-report/ --tags "AI,研究" --category "技術研究"</code></pre>
+      <p>尚無報告。點擊上方「+ 匯入報告」上傳你的第一份報告。</p>
     </div>
     {% endif %}
   </div>
 
-  {% if reports %}
   <script>
-    // ── Filter logic ──
+    // ── Upload logic ──
+    const uploadToggle = document.getElementById("upload-toggle");
+    const uploadArea = document.getElementById("upload-area");
+    const uploadFile = document.getElementById("upload-file");
+    const uploadDropzone = document.getElementById("upload-dropzone");
+    const uploadSubmit = document.getElementById("upload-submit");
+    const uploadStatus = document.getElementById("upload-status");
+    let selectedFile = null;
+
+    uploadToggle.addEventListener("click", () => {
+      uploadArea.style.display = uploadArea.style.display === "none" ? "" : "none";
+    });
+
+    // Drag & drop
+    uploadDropzone.addEventListener("dragover", (e) => {
+      e.preventDefault();
+      uploadDropzone.classList.add("drag-over");
+    });
+    uploadDropzone.addEventListener("dragleave", () => {
+      uploadDropzone.classList.remove("drag-over");
+    });
+    uploadDropzone.addEventListener("drop", (e) => {
+      e.preventDefault();
+      uploadDropzone.classList.remove("drag-over");
+      const file = e.dataTransfer.files[0];
+      if (file && file.name.endsWith(".md")) {
+        selectFile(file);
+      } else {
+        uploadStatus.textContent = "只支援 .md 檔案";
+        uploadStatus.className = "upload-status error";
+      }
+    });
+
+    uploadFile.addEventListener("change", () => {
+      if (uploadFile.files[0]) selectFile(uploadFile.files[0]);
+    });
+
+    function selectFile(file) {
+      selectedFile = file;
+      uploadDropzone.querySelector("p").textContent = `已選擇: ${file.name} (${(file.size / 1024).toFixed(1)} KB)`;
+      uploadSubmit.disabled = false;
+    }
+
+    uploadSubmit.addEventListener("click", async () => {
+      if (!selectedFile) return;
+
+      uploadSubmit.disabled = true;
+      uploadStatus.textContent = "匯入中...";
+      uploadStatus.className = "upload-status";
+
+      const tags = document.getElementById("upload-tags").value;
+      const category = document.getElementById("upload-category").value;
+
+      const formData = new FormData();
+      formData.append("file", selectedFile);
+
+      const params = new URLSearchParams();
+      if (tags) params.set("tags", tags);
+      if (category) params.set("category", category);
+
+      try {
+        const resp = await fetch(`/api/upload?${params}`, { method: "POST", body: formData });
+        const data = await resp.json();
+
+        if (resp.ok) {
+          uploadStatus.textContent = `匯入成功！格式：${data.format_detected === "cortex_verified" ? "Cortex [VERIFIED:]" : "標準 [n]"}`;
+          uploadStatus.className = "upload-status success";
+          setTimeout(() => location.reload(), 1200);
+        } else {
+          uploadStatus.textContent = `匯入失敗: ${data.detail || "unknown error"}`;
+          uploadStatus.className = "upload-status error";
+          uploadSubmit.disabled = false;
+        }
+      } catch (e) {
+        uploadStatus.textContent = `網路錯誤: ${e.message}`;
+        uploadStatus.className = "upload-status error";
+        uploadSubmit.disabled = false;
+      }
+    });
+
+    // ── Filter & Sort logic ──
     const cards = document.querySelectorAll(".report-card");
     const searchInput = document.getElementById("search-input");
+    const sortSelect = document.getElementById("sort-select");
     const noResults = document.getElementById("no-results");
+    const reportList = document.getElementById("report-list");
     let activeCategory = "all";
     let activeTags = new Set();
 
     function applyFilters() {
-      const query = searchInput.value.toLowerCase().trim();
+      const query = searchInput ? searchInput.value.toLowerCase().trim() : "";
       let visible = 0;
 
       cards.forEach(card => {
@@ -126,24 +242,42 @@
         const tags = (card.dataset.tags || "").split(",").filter(Boolean);
 
         let show = true;
-
-        // Category filter
         if (activeCategory !== "all" && category !== activeCategory) show = false;
-
-        // Tag filter (any match)
         if (activeTags.size > 0) {
-          const hasTag = tags.some(t => activeTags.has(t));
-          if (!hasTag) show = false;
+          if (!tags.some(t => activeTags.has(t))) show = false;
         }
-
-        // Search filter
         if (query && !title.includes(query) && !summary.includes(query)) show = false;
 
         card.style.display = show ? "" : "none";
         if (show) visible++;
       });
 
-      noResults.style.display = visible === 0 ? "" : "none";
+      if (noResults) noResults.style.display = visible === 0 ? "" : "none";
+    }
+
+    function applySort() {
+      if (!sortSelect || !reportList) return;
+      const value = sortSelect.value;
+      const cardsArray = Array.from(cards);
+
+      cardsArray.sort((a, b) => {
+        switch (value) {
+          case "date-desc":
+            return (b.dataset.reportDate || "").localeCompare(a.dataset.reportDate || "");
+          case "date-asc":
+            return (a.dataset.reportDate || "").localeCompare(b.dataset.reportDate || "");
+          case "title-asc":
+            return (a.dataset.title || "").localeCompare(b.dataset.title || "", "zh-Hant");
+          case "title-desc":
+            return (b.dataset.title || "").localeCompare(a.dataset.title || "", "zh-Hant");
+          case "updated-desc":
+            return (b.dataset.updatedAt || "").localeCompare(a.dataset.updatedAt || "");
+          default:
+            return 0;
+        }
+      });
+
+      cardsArray.forEach(card => reportList.appendChild(card));
     }
 
     // Category chips
@@ -171,9 +305,8 @@
       });
     });
 
-    // Search
-    searchInput.addEventListener("input", applyFilters);
+    if (searchInput) searchInput.addEventListener("input", applyFilters);
+    if (sortSelect) sortSelect.addEventListener("change", () => { applySort(); applyFilters(); });
   </script>
-  {% endif %}
 </body>
 </html>

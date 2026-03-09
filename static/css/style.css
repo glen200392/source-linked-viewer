@@ -73,6 +73,105 @@ body {
 
 /* ── Filter Bar ── */
 
+/* ── Upload Area ── */
+
+.upload-btn {
+  padding: 6px 16px;
+  background: var(--accent-dim);
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  color: var(--accent);
+  font-size: 0.85rem;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  transition: all 0.2s;
+}
+
+.upload-btn:hover {
+  background: var(--accent);
+  color: var(--bg-primary);
+}
+
+.upload-area {
+  margin-bottom: 20px;
+  padding: 16px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.upload-dropzone {
+  padding: 28px;
+  border: 2px dashed var(--border);
+  border-radius: 8px;
+  text-align: center;
+  color: var(--text-secondary);
+  transition: all 0.2s;
+  margin-bottom: 12px;
+}
+
+.upload-dropzone.drag-over {
+  border-color: var(--accent);
+  background: var(--accent-dim);
+}
+
+.upload-label {
+  color: var(--accent);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.upload-options {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.upload-input {
+  flex: 1;
+  min-width: 140px;
+  padding: 8px 12px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  font-family: var(--font-sans);
+  outline: none;
+}
+
+.upload-input:focus {
+  border-color: var(--accent);
+}
+
+.upload-submit {
+  padding: 8px 20px;
+  background: var(--accent);
+  border: none;
+  border-radius: 6px;
+  color: var(--bg-primary);
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  font-family: var(--font-sans);
+}
+
+.upload-submit:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.upload-status {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.upload-status.success { color: var(--success); }
+.upload-status.error { color: #f85149; }
+
+/* ── Filter & Sort Bar ── */
+
 .filter-bar {
   margin-bottom: 24px;
   display: flex;
@@ -80,8 +179,37 @@ body {
   gap: 12px;
 }
 
+.filter-bar-top {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
 .search-box {
-  width: 100%;
+  flex: 1;
+}
+
+.sort-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.sort-select {
+  padding: 8px 12px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-size: 0.82rem;
+  font-family: var(--font-sans);
+  outline: none;
+  cursor: pointer;
+}
+
+.sort-select:focus {
+  border-color: var(--accent);
 }
 
 .search-input {
@@ -237,6 +365,11 @@ body {
 
 .meta-category {
   color: var(--accent);
+}
+
+.meta-updated {
+  font-size: 0.72rem;
+  opacity: 0.6;
 }
 
 .meta-method {
@@ -535,6 +668,30 @@ body {
   font-size: 0.85rem;
   border-bottom: 1px dashed var(--text-muted);
   cursor: help;
+}
+
+/* Inline source citation links (from > 來源：pattern) */
+.citation-source {
+  min-width: auto;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+  gap: 4px;
+}
+
+.source-line blockquote {
+  border-left-color: var(--accent);
+  background: var(--accent-dim);
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin: 8px 0;
+}
+
+.source-line blockquote p {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
 }
 
 /* ── Source Pane ── */

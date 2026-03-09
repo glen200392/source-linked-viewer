@@ -1,11 +1,15 @@
 """Source-Linked Report Viewer — FastAPI Backend"""
 
 import json
+import re
+import shutil
+import subprocess
+from datetime import datetime
 from pathlib import Path
 
 import aiohttp
 import markdown
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import FastAPI, HTTPException, Query, UploadFile
 from fastapi.responses import FileResponse, HTMLResponse, Response
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
@@ -195,6 +199,32 @@ HIGHLIGHT_INJECT_SCRIPT = """
 """
 
 
+def extract_report_date(report_dir: Path, data: dict) -> str:
+    """Extract the report completion date (not import date).
+
+    Priority: meta.report_date > filename date pattern > generated_at
+    """
+    meta = data.get("meta", {})
+    if meta.get("report_date"):
+        return meta["report_date"]
+
+    # Try filename pattern: 2026-03-02_title or YYYYMMDD
+    dirname = report_dir.name
+    if m := re.match(r"(\d{4}-\d{2}-\d{2})", dirname):
+        return m.group(1)
+
+    # Try to extract from report.md first H1 or date-like patterns
+    report_md = report_dir / "report.md"
+    if report_md.exists():
+        head = report_md.read_text(encoding="utf-8")[:500]
+        if m := re.search(r"(\d{4}-\d{2}-\d{2})", head):
+            return m.group(1)
+
+    # Fallback to generated_at (import time)
+    gen = data.get("generated_at", "")
+    return gen[:10] if gen else ""
+
+
 def discover_reports() -> list[dict]:
     """Scan for report bundles with full catalog metadata."""
     reports = []
@@ -207,10 +237,18 @@ def discover_reports() -> list[dict]:
             with open(citation_map_file) as f:
                 data = json.load(f)
             meta = data.get("meta", {})
+
+            report_date = extract_report_date(report_dir, data)
+            # Last updated = file modification time of citation_map.json
+            mtime = citation_map_file.stat().st_mtime
+            updated_at = datetime.fromtimestamp(mtime).strftime("%Y-%m-%d %H:%M")
+
             reports.append({
                 "id": report_dir.name,
                 "title": data.get("title", report_dir.name),
+                "report_date": report_date,
                 "generated_at": data.get("generated_at", ""),
+                "updated_at": updated_at,
                 "stats": data.get("stats", {}),
                 "tags": meta.get("tags", []),
                 "category": meta.get("category", "未分類"),
@@ -218,8 +256,8 @@ def discover_reports() -> list[dict]:
                 "summary": meta.get("summary", ""),
                 "import_method": meta.get("import_method", ""),
             })
-    # Sort by date, newest first
-    reports.sort(key=lambda r: r.get("generated_at", ""), reverse=True)
+    # Sort by report date, newest first
+    reports.sort(key=lambda r: r.get("report_date", ""), reverse=True)
     return reports
 
 
@@ -346,6 +384,72 @@ async def proxy_url(url: str = Query(..., description="URL to proxy")):
                 return Response(content=content, media_type=content_type)
     except Exception as e:
         raise HTTPException(502, f"Failed to fetch: {e}")
+
+
+@app.post("/api/upload")
+async def upload_report(
+    file: UploadFile,
+    tags: str = Query("", description="Comma-separated tags"),
+    category: str = Query("未分類", description="Category name"),
+):
+    """Upload a markdown report and auto-import it.
+
+    Supports both [VERIFIED:] (Cortex) and [n] (standard) citation formats.
+    Overwrites existing report with the same slug.
+    """
+    if not file.filename or not file.filename.endswith(".md"):
+        raise HTTPException(400, "Only .md files are supported")
+
+    content = await file.read()
+    md_text = content.decode("utf-8", errors="replace")
+
+    # Generate slug from filename
+    slug = Path(file.filename).stem
+    # Sanitize slug
+    slug = re.sub(r"[^\w\-]", "-", slug).strip("-").lower()
+    if not slug:
+        slug = f"upload-{datetime.now().strftime('%Y%m%d-%H%M%S')}"
+
+    output_dir = REPORTS_DIR / slug
+
+    # Save the uploaded file
+    output_dir.mkdir(parents=True, exist_ok=True)
+    (output_dir / "snapshots").mkdir(exist_ok=True)
+    (output_dir / "media").mkdir(exist_ok=True)
+    report_path = output_dir / "report.md"
+    report_path.write_bytes(content)
+
+    # Detect format and run appropriate import script
+    scripts_dir = BASE_DIR / "scripts"
+    venv_python = BASE_DIR / ".venv" / "bin" / "python"
+    tag_list = [t.strip() for t in tags.split(",") if t.strip()]
+
+    has_verified = "[VERIFIED:" in md_text
+    script = "cortex_to_slv.py" if has_verified else "smart_import.py"
+
+    cmd = [
+        str(venv_python), str(scripts_dir / script),
+        str(report_path),
+        "--output", str(output_dir),
+        "--category", category,
+    ]
+    if tag_list:
+        cmd += ["--tags", ",".join(tag_list)]
+
+    try:
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
+        if result.returncode != 0:
+            raise HTTPException(500, f"Import failed: {result.stderr[:300]}")
+    except subprocess.TimeoutExpired:
+        raise HTTPException(504, "Import timed out")
+
+    return {
+        "status": "ok",
+        "slug": slug,
+        "url": f"/report/{slug}",
+        "format_detected": "cortex_verified" if has_verified else "standard",
+        "message": f"Report imported successfully as '{slug}'",
+    }
 
 
 if __name__ == "__main__":

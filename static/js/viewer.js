@@ -38,10 +38,11 @@ async function init() {
 }
 
 // ── Citation Transformation ──
-// Supports two formats:
+// Supports three formats:
 //   1. Numeric: [1], [@1] — standard academic style
 //   2. Cortex: [VERIFIED: descriptor] — Glen Cortex pipeline format
-// Both render as interactive citation links in the viewer.
+//   3. Inline source: > 來源：[Title](URL) — ChatGPT / manual style
+// All render as interactive citation links in the viewer.
 
 function transformCitations(html) {
   // Pass 1: Replace numeric [n] / [@n] citations
@@ -56,7 +57,6 @@ function transformCitations(html) {
   );
 
   // Pass 2: Replace [VERIFIED: descriptor] citations
-  // Maps descriptor → citation_map entry by matching against source titles, URLs, or meta.verified_label
   result = result.replace(
     /\[VERIFIED:\s*([^\]]+)\]/g,
     (match, descriptor) => {
@@ -64,6 +64,25 @@ function transformCitations(html) {
       if (!citation) return `<span class="verified-unlinked" title="來源未對應">${escapeHtml(match)}</span>`;
       const title = citation.source?.title || descriptor;
       return `<span class="citation-link citation-verified" data-ref-id="${citation.id}" data-index="${citation.index}" title="${escapeAttr(title)}"><span class="verified-badge">V</span>${citation.index}</span>`;
+    }
+  );
+
+  // Pass 3: Transform inline source links in blockquote source lines
+  // Pattern: <blockquote> containing 來源：... <a href="URL">Title</a>
+  // The markdown renderer converts > 來源：[Title](URL) into <blockquote><p>來源：<a>...</a></p></blockquote>
+  result = result.replace(
+    /(<blockquote>\s*<p>(?:來源|Source)[：:]\s*)(.*?)(<\/p>\s*<\/blockquote>)/gi,
+    (match, prefix, content, suffix) => {
+      // Replace each <a href="URL">Title</a> with a citation link
+      const transformed = content.replace(
+        /<a\s+href="(https?:\/\/[^"]+)"[^>]*>([^<]+)<\/a>/g,
+        (aMatch, url, title) => {
+          const citation = findCitationByUrl(url);
+          if (!citation) return aMatch; // keep original link if no match
+          return `<span class="citation-link citation-source" data-ref-id="${citation.id}" data-index="${citation.index}" title="${escapeAttr(url)}">${citation.index}. ${escapeHtml(title)}</span>`;
+        }
+      );
+      return `<div class="source-line">${prefix}${transformed}${suffix}</div>`;
     }
   );
 
@@ -105,6 +124,31 @@ function findCitationByDescriptor(descriptor) {
   }
 
   return bestMatch;
+}
+
+function findCitationByUrl(url) {
+  if (!citationMap?.citations) return null;
+  const normalized = url.replace(/\/+$/, "").toLowerCase();
+
+  // Exact URL match
+  let found = citationMap.citations.find(c =>
+    (c.source?.url || "").replace(/\/+$/, "").toLowerCase() === normalized
+  );
+  if (found) return found;
+
+  // Partial match: same domain + path
+  try {
+    const target = new URL(url);
+    found = citationMap.citations.find(c => {
+      if (!c.source?.url) return false;
+      try {
+        const src = new URL(c.source.url);
+        return src.hostname === target.hostname && src.pathname === target.pathname;
+      } catch { return false; }
+    });
+  } catch { /* invalid URL */ }
+
+  return found || null;
 }
 
 function escapeAttr(str) {
