@@ -38,9 +38,14 @@ async function init() {
 }
 
 // ── Citation Transformation ──
+// Supports two formats:
+//   1. Numeric: [1], [@1] — standard academic style
+//   2. Cortex: [VERIFIED: descriptor] — Glen Cortex pipeline format
+// Both render as interactive citation links in the viewer.
 
 function transformCitations(html) {
-  return html.replace(
+  // Pass 1: Replace numeric [n] / [@n] citations
+  let result = html.replace(
     /\[@?(\d+)\]/g,
     (match, num) => {
       const citation = findCitation(parseInt(num));
@@ -49,11 +54,57 @@ function transformCitations(html) {
       return `<span class="citation-link" data-ref-id="${citation.id}" data-index="${num}" title="${escapeAttr(title)}">${num}</span>`;
     }
   );
+
+  // Pass 2: Replace [VERIFIED: descriptor] citations
+  // Maps descriptor → citation_map entry by matching against source titles, URLs, or meta.verified_label
+  result = result.replace(
+    /\[VERIFIED:\s*([^\]]+)\]/g,
+    (match, descriptor) => {
+      const citation = findCitationByDescriptor(descriptor.trim());
+      if (!citation) return `<span class="verified-unlinked" title="來源未對應">${escapeHtml(match)}</span>`;
+      const title = citation.source?.title || descriptor;
+      return `<span class="citation-link citation-verified" data-ref-id="${citation.id}" data-index="${citation.index}" title="${escapeAttr(title)}"><span class="verified-badge">V</span>${citation.index}</span>`;
+    }
+  );
+
+  return result;
 }
 
 function findCitation(index) {
   if (!citationMap?.citations) return null;
   return citationMap.citations.find(c => c.index === index);
+}
+
+function findCitationByDescriptor(descriptor) {
+  if (!citationMap?.citations) return null;
+  const desc = descriptor.toLowerCase();
+
+  // Strategy 1: Exact match on meta.verified_label (set by cortex_to_slv.py)
+  let found = citationMap.citations.find(c =>
+    c.meta?.verified_label?.toLowerCase() === desc
+  );
+  if (found) return found;
+
+  // Strategy 2: Fuzzy match — descriptor words appear in source title
+  const words = desc.split(/[\s,+]+/).filter(w => w.length >= 2);
+  let bestMatch = null;
+  let bestScore = 0;
+
+  for (const c of citationMap.citations) {
+    const title = (c.source?.title || "").toLowerCase();
+    const url = (c.source?.url || "").toLowerCase();
+    const combined = `${title} ${url}`;
+
+    const matchCount = words.filter(w => combined.includes(w)).length;
+    const score = matchCount / words.length;
+
+    if (score > bestScore && score >= 0.5) {
+      bestScore = score;
+      bestMatch = c;
+    }
+  }
+
+  return bestMatch;
 }
 
 function escapeAttr(str) {

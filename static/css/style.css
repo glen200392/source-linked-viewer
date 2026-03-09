@@ -523,6 +523,20 @@ body {
   border-color: var(--accent);
 }
 
+/* Verified citation badge (from [VERIFIED: ...] markers) */
+.citation-verified .verified-badge {
+  font-size: 0.6rem;
+  margin-right: 2px;
+  opacity: 0.8;
+}
+
+.verified-unlinked {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  border-bottom: 1px dashed var(--text-muted);
+  cursor: help;
+}
+
 /* ── Source Pane ── */
 
 .source-placeholder {
