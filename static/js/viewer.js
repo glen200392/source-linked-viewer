@@ -18,23 +18,54 @@ async function init() {
   citationMap = citationData;
   citationOrder = citationMap.citations.map(c => c.id);
 
+  // Detect view mode based on available sources
+  const citationsWithUrl = citationMap.citations.filter(c => c.source?.url).length;
+  const viewMode = citationsWithUrl > 0 ? "source" : "reader";
+
   // Update header
   document.getElementById("report-title").textContent = citationMap.title || REPORT_ID;
   const count = citationMap.stats?.total_citations || citationMap.citations?.length || 0;
-  document.getElementById("citation-count").textContent = `${count} 引用`;
+
+  if (viewMode === "reader") {
+    document.getElementById("citation-count").textContent = "閱讀模式";
+    document.getElementById("citation-count").title = "此報告無外部來源可對照";
+    enterReaderMode();
+  } else {
+    document.getElementById("citation-count").textContent = `${count} 引用`;
+  }
 
   // Render report with citation links
   const html = transformCitations(reportData.html);
   document.getElementById("report-content").innerHTML = html;
 
-  // Build citation list panel
-  buildCitationList();
+  // Build citation list panel (only if sources exist)
+  if (viewMode === "source") {
+    buildCitationList();
+    bindCitationEvents();
+    initResizeHandle();
+    initKeyboardNav();
+    listenForHighlightResults();
+  }
+}
 
-  // Bind events
-  bindCitationEvents();
-  initResizeHandle();
-  initKeyboardNav();
-  listenForHighlightResults();
+function enterReaderMode() {
+  // Switch to full-width reading layout
+  document.body.classList.add("reader-mode");
+
+  // Hide source pane and resize handle
+  const sourcePane = document.getElementById("source-pane");
+  const resizeHandle = document.getElementById("resize-handle");
+  const reportPane = document.getElementById("report-pane");
+  const citationsBtn = document.getElementById("toggle-citations-btn");
+
+  if (sourcePane) sourcePane.style.display = "none";
+  if (resizeHandle) resizeHandle.style.display = "none";
+  if (reportPane) reportPane.style.width = "100%";
+  if (citationsBtn) citationsBtn.style.display = "none";
+
+  // Update toolbar hint
+  const hint = document.querySelector(".pane-hint");
+  if (hint) hint.textContent = "閱讀模式 — 此報告無外部來源";
 }
 
 // ── Citation Transformation ──

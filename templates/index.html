@@ -110,8 +110,11 @@
         <div class="card-meta">
           <span class="meta-date" title="報告完成日期">{{ r.report_date or 'N/A' }}</span>
           <span class="meta-category">{{ r.category }}</span>
-          {% if r.stats %}
+          {% if r.stats and r.stats.total_citations > 0 %}
           <span class="meta-citations">{{ r.stats.total_citations }} 引用</span>
+          <span class="meta-mode mode-source" title="可對照來源">來源對照</span>
+          {% else %}
+          <span class="meta-mode mode-reader" title="閱讀模式">閱讀模式</span>
           {% endif %}
           <span class="meta-updated" title="最後更新">↻ {{ r.updated_at }}</span>
         </div>
