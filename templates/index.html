@@ -8,29 +8,171 @@
 </head>
 <body class="index-page">
   <div class="index-container">
-    <h1>Source-Linked Report Viewer</h1>
-    <p class="subtitle">AI 研究報告 × 來源即時對照</p>
+    <div class="index-header">
+      <div>
+        <h1>Source-Linked Report Viewer</h1>
+        <p class="subtitle">AI 研究報告 × 來源即時對照</p>
+      </div>
+      <div class="index-stats">
+        <span class="stat-item">{{ reports|length }} 份報告</span>
+      </div>
+    </div>
 
+    <!-- Filter bar -->
     {% if reports %}
-    <div class="report-list">
+    <div class="filter-bar">
+      <!-- Search -->
+      <div class="search-box">
+        <input type="text" id="search-input" placeholder="搜尋報告標題或摘要..." class="search-input">
+      </div>
+
+      <!-- Category filter -->
+      {% if categories %}
+      <div class="filter-group">
+        <span class="filter-label">分類</span>
+        <div class="filter-chips">
+          <button class="chip active" data-filter="category" data-value="all">全部</button>
+          {% for cat, count in categories %}
+          <button class="chip" data-filter="category" data-value="{{ cat }}">{{ cat }} <span class="chip-count">{{ count }}</span></button>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      <!-- Tag filter -->
+      {% if tags %}
+      <div class="filter-group">
+        <span class="filter-label">標籤</span>
+        <div class="filter-chips tags-chips">
+          {% for tag, count in tags[:15] %}
+          <button class="chip chip-tag" data-filter="tag" data-value="{{ tag }}">{{ tag }} <span class="chip-count">{{ count }}</span></button>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+    </div>
+
+    <!-- Report list -->
+    <div class="report-list" id="report-list">
       {% for r in reports %}
-      <a href="/report/{{ r.id }}" class="report-card">
-        <h2>{{ r.title }}</h2>
-        <div class="report-meta">
-          <span>{{ r.generated_at[:10] if r.generated_at else 'N/A' }}</span>
+      <a href="/report/{{ r.id }}" class="report-card"
+         data-category="{{ r.category }}"
+         data-tags="{{ r.tags|join(',') }}"
+         data-title="{{ r.title }}"
+         data-summary="{{ r.summary }}">
+        <div class="card-header">
+          <h2>{{ r.title }}</h2>
+          <span class="status-badge status-{{ r.status }}">{{ r.status }}</span>
+        </div>
+        {% if r.summary %}
+        <p class="card-summary">{{ r.summary }}</p>
+        {% endif %}
+        <div class="card-meta">
+          <span class="meta-date">{{ r.generated_at[:10] if r.generated_at else 'N/A' }}</span>
+          <span class="meta-category">{{ r.category }}</span>
           {% if r.stats %}
-          <span>{{ r.stats.total_citations }} 引用</span>
+          <span class="meta-citations">{{ r.stats.total_citations }} 引用</span>
+          {% endif %}
+          {% if r.import_method %}
+          <span class="meta-method">via {{ r.import_method }}</span>
           {% endif %}
         </div>
+        {% if r.tags %}
+        <div class="card-tags">
+          {% for tag in r.tags[:6] %}
+          <span class="tag">{{ tag }}</span>
+          {% endfor %}
+          {% if r.tags|length > 6 %}
+          <span class="tag tag-more">+{{ r.tags|length - 6 }}</span>
+          {% endif %}
+        </div>
+        {% endif %}
       </a>
       {% endfor %}
     </div>
+
+    <!-- No results message -->
+    <div id="no-results" class="empty-state" style="display:none">
+      <p>沒有符合條件的報告。</p>
+    </div>
+
     {% else %}
     <div class="empty-state">
-      <p>尚無報告。請將報告放入 <code>demo/</code> 目錄。</p>
-      <p>每份報告需包含 <code>report.md</code> 和 <code>citation_map.json</code>。</p>
+      <p>尚無報告。</p>
+      <p>使用以下指令匯入：</p>
+      <pre><code>python scripts/smart_import.py report.md --output demo/my-report/ --tags "AI,研究" --category "技術研究"</code></pre>
     </div>
     {% endif %}
   </div>
+
+  {% if reports %}
+  <script>
+    // ── Filter logic ──
+    const cards = document.querySelectorAll(".report-card");
+    const searchInput = document.getElementById("search-input");
+    const noResults = document.getElementById("no-results");
+    let activeCategory = "all";
+    let activeTags = new Set();
+
+    function applyFilters() {
+      const query = searchInput.value.toLowerCase().trim();
+      let visible = 0;
+
+      cards.forEach(card => {
+        const title = (card.dataset.title || "").toLowerCase();
+        const summary = (card.dataset.summary || "").toLowerCase();
+        const category = card.dataset.category || "";
+        const tags = (card.dataset.tags || "").split(",").filter(Boolean);
+
+        let show = true;
+
+        // Category filter
+        if (activeCategory !== "all" && category !== activeCategory) show = false;
+
+        // Tag filter (any match)
+        if (activeTags.size > 0) {
+          const hasTag = tags.some(t => activeTags.has(t));
+          if (!hasTag) show = false;
+        }
+
+        // Search filter
+        if (query && !title.includes(query) && !summary.includes(query)) show = false;
+
+        card.style.display = show ? "" : "none";
+        if (show) visible++;
+      });
+
+      noResults.style.display = visible === 0 ? "" : "none";
+    }
+
+    // Category chips
+    document.querySelectorAll('[data-filter="category"]').forEach(chip => {
+      chip.addEventListener("click", () => {
+        document.querySelectorAll('[data-filter="category"]').forEach(c => c.classList.remove("active"));
+        chip.classList.add("active");
+        activeCategory = chip.dataset.value;
+        applyFilters();
+      });
+    });
+
+    // Tag chips (toggle)
+    document.querySelectorAll('[data-filter="tag"]').forEach(chip => {
+      chip.addEventListener("click", () => {
+        const tag = chip.dataset.value;
+        if (activeTags.has(tag)) {
+          activeTags.delete(tag);
+          chip.classList.remove("active");
+        } else {
+          activeTags.add(tag);
+          chip.classList.add("active");
+        }
+        applyFilters();
+      });
+    });
+
+    // Search
+    searchInput.addEventListener("input", applyFilters);
+  </script>
+  {% endif %}
 </body>
 </html>

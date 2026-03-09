@@ -196,29 +196,74 @@ HIGHLIGHT_INJECT_SCRIPT = """
 
 
 def discover_reports() -> list[dict]:
-    """Scan for report bundles (directories containing report.md + citation_map.json)."""
+    """Scan for report bundles with full catalog metadata."""
     reports = []
     for report_dir in sorted(REPORTS_DIR.iterdir()):
         if not report_dir.is_dir():
             continue
         report_md = report_dir / "report.md"
-        citation_map = report_dir / "citation_map.json"
-        if report_md.exists() and citation_map.exists():
-            with open(citation_map) as f:
-                meta = json.load(f)
+        citation_map_file = report_dir / "citation_map.json"
+        if report_md.exists() and citation_map_file.exists():
+            with open(citation_map_file) as f:
+                data = json.load(f)
+            meta = data.get("meta", {})
             reports.append({
                 "id": report_dir.name,
-                "title": meta.get("title", report_dir.name),
-                "generated_at": meta.get("generated_at", ""),
-                "stats": meta.get("stats", {}),
+                "title": data.get("title", report_dir.name),
+                "generated_at": data.get("generated_at", ""),
+                "stats": data.get("stats", {}),
+                "tags": meta.get("tags", []),
+                "category": meta.get("category", "未分類"),
+                "status": meta.get("status", "draft"),
+                "summary": meta.get("summary", ""),
+                "import_method": meta.get("import_method", ""),
             })
+    # Sort by date, newest first
+    reports.sort(key=lambda r: r.get("generated_at", ""), reverse=True)
     return reports
+
+
+@app.get("/api/catalog")
+async def get_catalog():
+    """Return the full catalog with all reports and aggregated tags/categories."""
+    reports = discover_reports()
+
+    # Aggregate tags and categories
+    all_tags: dict[str, int] = {}
+    all_categories: dict[str, int] = {}
+    for r in reports:
+        for tag in r.get("tags", []):
+            all_tags[tag] = all_tags.get(tag, 0) + 1
+        cat = r.get("category", "未分類")
+        all_categories[cat] = all_categories.get(cat, 0) + 1
+
+    return {
+        "reports": reports,
+        "tags": dict(sorted(all_tags.items(), key=lambda x: -x[1])),
+        "categories": dict(sorted(all_categories.items(), key=lambda x: -x[1])),
+        "total": len(reports),
+    }
 
 
 @app.get("/", response_class=HTMLResponse)
 async def index(request: Request):
     reports = discover_reports()
-    return templates.TemplateResponse("index.html", {"request": request, "reports": reports})
+
+    # Aggregate for template
+    all_tags: dict[str, int] = {}
+    all_categories: dict[str, int] = {}
+    for r in reports:
+        for tag in r.get("tags", []):
+            all_tags[tag] = all_tags.get(tag, 0) + 1
+        cat = r.get("category", "未分類")
+        all_categories[cat] = all_categories.get(cat, 0) + 1
+
+    return templates.TemplateResponse("index.html", {
+        "request": request,
+        "reports": reports,
+        "tags": sorted(all_tags.items(), key=lambda x: -x[1]),
+        "categories": sorted(all_categories.items(), key=lambda x: -x[1]),
+    })
 
 
 @app.get("/report/{report_id}", response_class=HTMLResponse)

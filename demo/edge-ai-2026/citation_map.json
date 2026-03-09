@@ -1,9 +1,17 @@
 {
-  "$schema": "source-linked-viewer/citation-map/v1",
+  "$schema": "source-linked-viewer/citation-map/v2",
   "title": "Edge AI 技術趨勢研究報告（2026 Q1）",
   "report_id": "edge-ai-2026",
   "generated_at": "2026-03-09T14:30:00+08:00",
   "generator": "research-orchestrator/v2",
+
+  "meta": {
+    "tags": ["edge-ai", "semiconductor", "model-compression", "autonomous-driving", "manufacturing"],
+    "category": "技術研究",
+    "status": "verified",
+    "import_method": "pipeline",
+    "summary": "分析 2026 Q1 Edge AI 關鍵技術發展：市場規模 $38B→$107B、模型壓縮 8:1、Waymo 95% 邊緣推論"
+  },
 
   "citations": [
     {
