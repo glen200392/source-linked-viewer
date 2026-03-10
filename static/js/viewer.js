@@ -304,14 +304,25 @@ async function loadSource(refId) {
 
   // Get anchor info for highlighting
   const anchor = citation.anchors?.[0];
+  const isOrphan = anchor?._orphan === true;
   const quoteSelector = anchor?.source_selectors?.find(s => s.type === "TextQuoteSelector");
+
+  // Build anchor status indicator
+  let anchorStatusHtml = "";
+  if (quoteSelector) {
+    anchorStatusHtml = '<span class="anchor-status" id="anchor-status">⏳ 定位中...</span>';
+  } else if (isOrphan) {
+    const reason = anchor?._orphan_reason || "";
+    const reasonText = reason === "no_snapshot" ? "無快照" : reason === "no_match" ? "無法匹配" : "未錨定";
+    anchorStatusHtml = `<span class="anchor-status anchor-orphan" title="此引用無法自動定位到來源文字">⚠ ${reasonText}</span>`;
+  }
 
   sourceContent.className = "pane-content has-iframe";
   sourceContent.innerHTML = `
     <div class="source-info-bar">
       <span class="source-title">${escapeHtml(citation.source?.title || refId)}</span>
       <span class="source-type-badge">${sourceType}</span>
-      ${quoteSelector ? '<span class="anchor-status" id="anchor-status">⏳ 定位中...</span>' : ""}
+      ${anchorStatusHtml}
     </div>
     <iframe id="source-iframe" src="${srcUrl}" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
   `;

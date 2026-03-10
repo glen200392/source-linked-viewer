@@ -184,7 +184,22 @@ def _extract_inline_source_citations(md_text: str) -> list[dict]:
         if not should_extract:
             continue
 
+        # Lookahead: check next lines for inline quotes (Route A)
+        # Pattern: > 引用原文：「...」 or > Quote: "..."
+        lookahead_quotes: list[str] = []
+        for la_i in range(line_num + 1, min(line_num + 4, len(lines))):
+            la_line = lines[la_i].strip()
+            qm = re.match(
+                r'^>\s*(?:引用原文|原文引用|Quote|Excerpt)[：:]\s*[「"\'"](.+?)[」"\'"]',
+                la_line,
+            )
+            if qm:
+                qt = qm.group(1).strip()
+                if qt and len(qt) >= 10:
+                    lookahead_quotes.append(qt)
+
         # Extract all [Title](URL) from this line
+        url_index_on_line = 0
         for m in re.finditer(r"\[([^\]]+)\]\((https?://[^\)]+)\)", line):
             title = m.group(1).strip()
             url = m.group(2).strip()
@@ -203,7 +218,7 @@ def _extract_inline_source_citations(md_text: str) -> list[dict]:
                     context = prev[:100]
                     break
 
-            citations.append({
+            entry: dict = {
                 "index": index,
                 "section": current_section,
                 "paragraph": current_paragraph,
@@ -211,7 +226,17 @@ def _extract_inline_source_citations(md_text: str) -> list[dict]:
                 "auto_url": url,
                 "auto_title": title,
                 "source_line": stripped[:100],
-            })
+            }
+
+            # If there's one quote, all URLs on this line share it;
+            # if multiple quotes, match by position
+            if len(lookahead_quotes) == 1:
+                entry["inline_quote"] = lookahead_quotes[0]
+            elif url_index_on_line < len(lookahead_quotes):
+                entry["inline_quote"] = lookahead_quotes[url_index_on_line]
+
+            citations.append(entry)
+            url_index_on_line += 1
 
     return citations
 
@@ -339,7 +364,9 @@ def build_citation_map(
         }
 
         # Build anchor with TextQuoteSelector if quote available
-        if src.get("quote"):
+        # Priority: sources.json quote > inline markdown quote
+        quote_text = src.get("quote") or ref.get("inline_quote", "")
+        if quote_text:
             citation["anchors"].append({
                 "report_location": {
                     "section": ref["section"],
@@ -349,11 +376,12 @@ def build_citation_map(
                 "source_selectors": [
                     {
                         "type": "TextQuoteSelector",
-                        "exact": src["quote"],
+                        "exact": quote_text,
                         "prefix": src.get("quote_prefix", ""),
                         "suffix": src.get("quote_suffix", ""),
                     },
                 ],
+                "_match_method": "inline-quote" if ref.get("inline_quote") else "sources-json",
             })
 
         # Handle video type
