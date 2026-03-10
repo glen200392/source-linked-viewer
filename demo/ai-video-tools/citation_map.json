@@ -1,0 +1,710 @@
+{
+  "$schema": "source-linked-viewer/citation-map/v1",
+  "title": "AI 影片製作工具完整研究報告",
+  "report_id": "ai-video-tools",
+  "generated_at": "2026-03-09T17:06:29.905652+00:00",
+  "generator": "generate_citation_map/v1",
+  "citations": [
+    {
+      "id": "ref-001",
+      "index": 1,
+      "source": {
+        "url": "https://github.com/Wan-Video/Wan2.2",
+        "title": "Wan 2.2 — GitHub",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.904998+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-001.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-002",
+      "index": 2,
+      "source": {
+        "url": "https://magi-1.ai/",
+        "title": "MAGI-1 — 官方網站",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905174+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-002.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-003",
+      "index": 3,
+      "source": {
+        "url": "https://github.com/hpcaitech/Open-Sora",
+        "title": "Open-Sora — GitHub",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905185+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-003.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-004",
+      "index": 4,
+      "source": {
+        "url": "https://www.comfy.org/",
+        "title": "ComfyUI — 官方網站",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905193+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-004.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-005",
+      "index": 5,
+      "source": {
+        "url": "https://github.com/deepbeepmeep/Wan2GP",
+        "title": "Wan2GP — GitHub",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905200+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-005.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-006",
+      "index": 6,
+      "source": {
+        "url": "https://ltx.io/",
+        "title": "LTX — 官方網站",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905206+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-006.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-007",
+      "index": 7,
+      "source": {
+        "url": "https://github.com/remotion-dev/remotion",
+        "title": "Remotion — GitHub",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905214+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-007.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-008",
+      "index": 8,
+      "source": {
+        "url": "https://www.flowhunt.io/rendervid/",
+        "title": "Rendervid — FlowHunt",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905221+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-008.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-009",
+      "index": 9,
+      "source": {
+        "url": "https://github.com/Zulko/moviepy",
+        "title": "MoviePy — GitHub",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905226+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-009.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-010",
+      "index": 10,
+      "source": {
+        "url": "https://github.com/3b1b/manim",
+        "title": "Manim — GitHub",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905232+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-010.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-011",
+      "index": 11,
+      "source": {
+        "url": "https://github.com/ManimCommunity/manim",
+        "title": "Manim Community Edition — GitHub",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905238+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-011.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-012",
+      "index": 12,
+      "source": {
+        "url": "https://github.com/designcombo/react-video-editor",
+        "title": "DesignCombo React Video Editor — GitHub",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905244+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-012.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-013",
+      "index": 13,
+      "source": {
+        "url": "https://huggingface.co/coqui/XTTS-v2",
+        "title": "Coqui XTTS-v2 — Hugging Face",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905250+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-013.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-014",
+      "index": 14,
+      "source": {
+        "url": "https://www.pixazo.ai/blog/best-open-source-lip-sync-models",
+        "title": "MuseTalk — Pixazo",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905255+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-014.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-015",
+      "index": 15,
+      "source": {
+        "url": "https://www.synthesia.io/",
+        "title": "Synthesia — 官方網站",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905261+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-015.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-016",
+      "index": 16,
+      "source": {
+        "url": "https://www.heygen.com/",
+        "title": "HeyGen — 官方網站",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905269+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-016.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-017",
+      "index": 17,
+      "source": {
+        "url": "https://www.colossyan.com/",
+        "title": "Colossyan — 官方網站",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905275+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-017.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-018",
+      "index": 18,
+      "source": {
+        "url": "https://www.d-id.com/",
+        "title": "D-ID — 官方網站",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905281+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-018.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-019",
+      "index": 19,
+      "source": {
+        "url": "https://ltx.studio/",
+        "title": "LTX Studio — 官方網站",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905287+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-019.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-020",
+      "index": 20,
+      "source": {
+        "url": "https://elevenlabs.io/",
+        "title": "ElevenLabs — 官方網站",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905347+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-020.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-021",
+      "index": 21,
+      "source": {
+        "url": "https://filmustage.com/",
+        "title": "Filmustage — 官方網站",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905374+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-021.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-022",
+      "index": 22,
+      "source": {
+        "url": "https://www.deepfiction.ai/blog/ai-filmmaking-pipeline-script-to-screen-2026",
+        "title": "AI Filmmaking Pipeline 2026 — DeepFiction",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905395+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-022.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-023",
+      "index": 23,
+      "source": {
+        "url": "https://www.x-pilot.ai/blog/best-ai-training-video-generators-2026-ld-tools-comparison",
+        "title": "Best AI Training Video Generators 2026 — X-Pilot",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905450+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-023.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-024",
+      "index": 24,
+      "source": {
+        "url": "https://blog.google/innovation-and-ai/products/notebooklm/generate-your-own-cinematic-video-overviews-in-notebooklm/",
+        "title": "NotebookLM Cinematic Video Overviews — Google Blog",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905499+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-024.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-025",
+      "index": 25,
+      "source": {
+        "url": "https://wavespeed.ai/blog/posts/heygen-vs-synthesia-comparison-2026/",
+        "title": "HeyGen vs Synthesia 2026 — WaveSpeedAI",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905526+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-025.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-026",
+      "index": 26,
+      "source": {
+        "url": "https://neuwark.com/blog/synthesia-vs-colossyan-2026-review-best-ai-platform-for-corporate-training",
+        "title": "Synthesia vs Colossyan 2026 — Neuwark",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905543+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-026.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-027",
+      "index": 27,
+      "source": {
+        "url": "https://sumeetkg.medium.com/video-as-code-which-library-should-you-choose-8807ac1bda6b",
+        "title": "Video as Code: Which Library? — Medium",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905559+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-027.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-028",
+      "index": 28,
+      "source": {
+        "url": "https://medium.com/@geronimo7/how-to-train-a-flux1-lora-for-1-dfd1800afce5",
+        "title": "FLUX LoRA Training for $1 — Medium",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905573+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-028.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-029",
+      "index": 29,
+      "source": {
+        "url": "https://www.spheron.network/blog/gpu-requirements-cheat-sheet-2026/",
+        "title": "GPU Requirements Cheat Sheet 2026 — Spheron",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905606+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-029.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-030",
+      "index": 30,
+      "source": {
+        "url": "https://www.pixazo.ai/blog/top-open-source-image-generation-models",
+        "title": "Open Source Image Generation 2026 — Pixazo",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905621+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-030.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-031",
+      "index": 31,
+      "source": {
+        "url": "https://www.bentoml.com/blog/exploring-the-world-of-open-source-text-to-speech-models",
+        "title": "Open Source TTS Models 2026 — BentoML",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905629+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-031.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-032",
+      "index": 32,
+      "source": {
+        "url": "https://joyspace.ai/ai-video-production-pipeline-1000-clips-monthly-2026",
+        "title": "AI Video Production Pipeline — Joyspace",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905635+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-032.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-033",
+      "index": 33,
+      "source": {
+        "url": "https://www.hyperstack.cloud/blog/case-study/best-open-source-video-generation-models",
+        "title": "Open Source Video Generation Models — Hyperstack",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905641+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-033.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-034",
+      "index": 34,
+      "source": {
+        "url": "https://blogs.nvidia.com/blog/rtx-ai-garage-ces-2026-open-models-video-generation/",
+        "title": "NVIDIA RTX AI Video Generation",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.905647+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-034.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    }
+  ],
+  "stats": {
+    "total_citations": 34,
+    "by_type": {
+      "webpage": 34
+    },
+    "snapshots_available": 0,
+    "snapshots_failed": 0,
+    "auto_extracted_sources": 34,
+    "avg_anchors_per_citation": 0.0
+  },
+  "meta": {
+    "tags": [
+      "AI",
+      "content-creation",
+      "tools",
+      "video"
+    ],
+    "category": "技術研究",
+    "status": "imported",
+    "import_method": "smart_import"
+  }
+}

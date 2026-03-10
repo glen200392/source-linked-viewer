@@ -1,0 +1,26 @@
+{
+  "$schema": "source-linked-viewer/citation-map/v2",
+  "title": "Data Governance & Data Science 能力建置研究報告",
+  "report_id": "reports",
+  "generated_at": "2026-03-09T16:50:22.498904+00:00",
+  "generator": "smart_import/v1",
+  "meta": {
+    "tags": [
+      "capability",
+      "data-governance",
+      "data-science"
+    ],
+    "category": "資料治理",
+    "status": "imported",
+    "import_method": "smart_import"
+  },
+  "citations": [],
+  "stats": {
+    "total_citations": 0,
+    "by_type": {},
+    "snapshots_available": 0,
+    "snapshots_failed": 0,
+    "sources_enriched": 0,
+    "sources_no_url": 0
+  }
+}

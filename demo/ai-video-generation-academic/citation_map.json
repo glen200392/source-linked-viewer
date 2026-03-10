@@ -1,0 +1,311 @@
+{
+  "$schema": "source-linked-viewer/citation-map/v1",
+  "title": "Academic & Research Lab Video Generation Models — March 2026",
+  "report_id": "ai-video-generation-academic",
+  "generated_at": "2026-03-09T17:04:55.989480+00:00",
+  "generator": "generate_citation_map/v1",
+  "citations": [
+    {
+      "id": "ref-001",
+      "index": 1,
+      "source": {
+        "url": "https://github.com/Tencent-Hunyuan",
+        "title": "github.com/Tencent-Hunyuan",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:04:55.989125+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-001.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-002",
+      "index": 2,
+      "source": {
+        "url": "https://wanai.pro/",
+        "title": "wanai.pro",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:04:55.989398+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-002.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-003",
+      "index": 3,
+      "source": {
+        "url": "https://github.com/Vchitect/Latte",
+        "title": "github.com/Vchitect/Latte",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:04:55.989409+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-003.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-004",
+      "index": 4,
+      "source": {
+        "url": "https://github.com/baaivision/NOVA",
+        "title": "github.com/baaivision/NOVA",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:04:55.989416+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-004.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-005",
+      "index": 5,
+      "source": {
+        "url": "https://github.com/genmoai/mochi",
+        "title": "github.com/genmoai/mochi",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:04:55.989423+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-005.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-006",
+      "index": 6,
+      "source": {
+        "url": "https://github.com/Lightricks/LTX-2",
+        "title": "github.com/Lightricks/LTX-2",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:04:55.989429+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-006.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-007",
+      "index": 7,
+      "source": {
+        "url": "https://arxiv.org/html/2507.16869v2",
+        "title": "Controllable Video Generation Survey",
+        "type": "pdf",
+        "accessed_at": "2026-03-09T17:04:55.989434+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-007.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-008",
+      "index": 8,
+      "source": {
+        "url": "https://arxiv.org/abs/2503.20314",
+        "title": "Wan: Open Video Models",
+        "type": "pdf",
+        "accessed_at": "2026-03-09T17:04:55.989439+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-008.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-009",
+      "index": 9,
+      "source": {
+        "url": "https://arxiv.org/abs/2412.14169",
+        "title": "NOVA: Autoregressive without VQ",
+        "type": "pdf",
+        "accessed_at": "2026-03-09T17:04:55.989445+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-009.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-010",
+      "index": 10,
+      "source": {
+        "url": "https://arxiv.org/abs/2512.11438",
+        "title": "Flowception",
+        "type": "pdf",
+        "accessed_at": "2026-03-09T17:04:55.989451+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-010.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-011",
+      "index": 11,
+      "source": {
+        "url": "https://arxiv.org/html/2505.22167",
+        "title": "Q-VDiT Quantization",
+        "type": "pdf",
+        "accessed_at": "2026-03-09T17:04:55.989459+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-011.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-012",
+      "index": 12,
+      "source": {
+        "url": "https://research.adobe.com/news/generative-video-propagation-cvpr-2025/",
+        "title": "Adobe CVPR 2025",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:04:55.989465+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-012.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-013",
+      "index": 13,
+      "source": {
+        "url": "https://www.prnewswire.com/news-releases/shengshu-technology-and-tsinghua-university-unveil-turbodiffusion-ushering-in-the-era-of-real-time-ai-video-generation-302648640.html",
+        "title": "Tsinghua TurboDiffusion Press Release",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:04:55.989471+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-013.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-014",
+      "index": 14,
+      "source": {
+        "url": "https://www.siliconflow.com/articles/en/best-open-source-video-generation-models-2025",
+        "title": "SiliconFlow Model Hub",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:04:55.989477+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-014.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    }
+  ],
+  "stats": {
+    "total_citations": 14,
+    "by_type": {
+      "webpage": 9,
+      "pdf": 5
+    },
+    "snapshots_available": 0,
+    "snapshots_failed": 0,
+    "auto_extracted_sources": 14,
+    "avg_anchors_per_citation": 0.0
+  },
+  "meta": {
+    "tags": [
+      "AI",
+      "academic",
+      "research",
+      "video-generation"
+    ],
+    "category": "技術研究",
+    "status": "imported",
+    "import_method": "smart_import"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "source-linked-viewer/citation-map/v2",
+  "title": "AI Governance Weekly Update — 2026-03-04",
+  "report_id": "weekly-reports",
+  "generated_at": "2026-03-09T16:50:24.291418+00:00",
+  "generator": "smart_import/v1",
+  "meta": {
+    "tags": [
+      "governance",
+      "update",
+      "weekly"
+    ],
+    "category": "週報",
+    "status": "imported",
+    "import_method": "smart_import"
+  },
+  "citations": [],
+  "stats": {
+    "total_citations": 0,
+    "by_type": {},
+    "snapshots_available": 0,
+    "snapshots_failed": 0,
+    "sources_enriched": 0,
+    "sources_no_url": 0
+  }
+}

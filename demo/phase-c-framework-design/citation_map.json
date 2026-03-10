@@ -1,0 +1,26 @@
+{
+  "$schema": "source-linked-viewer/citation-map/v2",
+  "title": "Phase C: AI 治理政策與制度框架設計",
+  "report_id": "governance-reports",
+  "generated_at": "2026-03-09T16:50:23.305731+00:00",
+  "generator": "smart_import/v1",
+  "meta": {
+    "tags": [
+      "framework",
+      "governance-design",
+      "policy"
+    ],
+    "category": "AI 治理",
+    "status": "imported",
+    "import_method": "smart_import"
+  },
+  "citations": [],
+  "stats": {
+    "total_citations": 0,
+    "by_type": {},
+    "snapshots_available": 0,
+    "snapshots_failed": 0,
+    "sources_enriched": 0,
+    "sources_no_url": 0
+  }
+}

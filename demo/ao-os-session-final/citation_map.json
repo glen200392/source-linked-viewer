@@ -1,0 +1,26 @@
+{
+  "$schema": "source-linked-viewer/citation-map/v2",
+  "title": "AO OS macOS 部署 — Session 最終報告",
+  "report_id": "reports",
+  "generated_at": "2026-03-09T16:50:22.986411+00:00",
+  "generator": "smart_import/v1",
+  "meta": {
+    "tags": [
+      "AO-OS",
+      "deployment",
+      "macOS"
+    ],
+    "category": "系統部署",
+    "status": "imported",
+    "import_method": "smart_import"
+  },
+  "citations": [],
+  "stats": {
+    "total_citations": 0,
+    "by_type": {},
+    "snapshots_available": 0,
+    "snapshots_failed": 0,
+    "sources_enriched": 0,
+    "sources_no_url": 0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "source-linked-viewer/citation-map/v1",
+  "title": "致伸集團 AI 治理與資料治理建議報告",
+  "report_id": "ai-data-governance-recommendation",
+  "generated_at": "2026-03-09T17:06:29.805945+00:00",
+  "generator": "generate_citation_map/v1",
+  "citations": [],
+  "stats": {
+    "total_citations": 0,
+    "by_type": {},
+    "snapshots_available": 0,
+    "snapshots_failed": 0,
+    "auto_extracted_sources": 0,
+    "avg_anchors_per_citation": 0
+  },
+  "meta": {
+    "tags": [
+      "AI-governance",
+      "data-governance",
+      "recommendation"
+    ],
+    "category": "AI 治理",
+    "status": "imported",
+    "import_method": "smart_import"
+  }
+}

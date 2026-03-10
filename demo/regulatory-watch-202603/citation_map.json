@@ -1,0 +1,27 @@
+{
+  "$schema": "source-linked-viewer/citation-map/v2",
+  "title": "Regulatory Watch Report — Full Baseline Scan",
+  "report_id": "regulatory-updates",
+  "generated_at": "2026-03-09T16:50:23.479850+00:00",
+  "generator": "smart_import/v1",
+  "meta": {
+    "tags": [
+      "EU-AI-Act",
+      "PIPL",
+      "global",
+      "regulatory"
+    ],
+    "category": "法規監控",
+    "status": "imported",
+    "import_method": "smart_import"
+  },
+  "citations": [],
+  "stats": {
+    "total_citations": 0,
+    "by_type": {},
+    "snapshots_available": 0,
+    "snapshots_failed": 0,
+    "sources_enriched": 0,
+    "sources_no_url": 0
+  }
+}

@@ -1,0 +1,751 @@
+{
+  "$schema": "source-linked-viewer/citation-map/v1",
+  "title": "AI Agent 架構全景研究報告（2025-2026）",
+  "report_id": "ai-agent-architecture",
+  "generated_at": "2026-03-09T17:06:29.696973+00:00",
+  "generator": "generate_citation_map/v1",
+  "citations": [
+    {
+      "id": "ref-001",
+      "index": 1,
+      "source": {
+        "url": "https://docs.langchain.com/",
+        "title": "LangGraph Documentation",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.696484+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-001.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-002",
+      "index": 2,
+      "source": {
+        "url": "https://openai.github.io/openai-agents-python/",
+        "title": "OpenAI Agents SDK",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.696766+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-002.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-003",
+      "index": 3,
+      "source": {
+        "url": "https://docs.cloud.google.com/agent-builder/agent-development-kit/overview",
+        "title": "Google ADK",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.696777+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-003.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-004",
+      "index": 4,
+      "source": {
+        "url": "https://learn.microsoft.com/en-us/agent-framework/overview/",
+        "title": "Microsoft Agent Framework",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.696785+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-004.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-005",
+      "index": 5,
+      "source": {
+        "url": "https://crewai.com/",
+        "title": "CrewAI",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.696792+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-005.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-006",
+      "index": 6,
+      "source": {
+        "url": "https://www.microsoft.com/en-us/research/blog/autogen-v0-4/",
+        "title": "AutoGen v0.4",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.696799+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-006.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-007",
+      "index": 7,
+      "source": {
+        "url": "https://www.anthropic.com/news/model-context-protocol",
+        "title": "Anthropic MCP",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.696804+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-007.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-008",
+      "index": 8,
+      "source": {
+        "url": "https://mastra.ai/",
+        "title": "Mastra",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.696810+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-008.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-009",
+      "index": 9,
+      "source": {
+        "url": "https://github.com/geekan/MetaGPT",
+        "title": "MetaGPT",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.696816+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-009.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-010",
+      "index": 10,
+      "source": {
+        "url": "https://dspy.ai/",
+        "title": "DSPy",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.696822+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-010.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-011",
+      "index": 11,
+      "source": {
+        "url": "https://ai.pydantic.dev/",
+        "title": "PydanticAI",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.696829+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-011.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-012",
+      "index": 12,
+      "source": {
+        "url": "https://www.agno.com/",
+        "title": "Agno",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.696835+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-012.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-013",
+      "index": 13,
+      "source": {
+        "url": "https://huggingface.co/docs/smolagents/",
+        "title": "smolagents",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.696841+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-013.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-014",
+      "index": 14,
+      "source": {
+        "url": "https://www.camel-ai.org/",
+        "title": "CAMEL-AI",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.696846+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-014.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-015",
+      "index": 15,
+      "source": {
+        "url": "https://modelcontextprotocol.io/specification/2025-11-25",
+        "title": "MCP Specification",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.696852+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-015.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-016",
+      "index": 16,
+      "source": {
+        "url": "https://a2aprotocol.ai/",
+        "title": "A2A Protocol",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.696858+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-016.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-017",
+      "index": 17,
+      "source": {
+        "url": "https://agent-network-protocol.com/",
+        "title": "ANP",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.696863+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-017.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-018",
+      "index": 18,
+      "source": {
+        "url": "https://aaif.io/",
+        "title": "AAIF",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.696869+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-018.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-019",
+      "index": 19,
+      "source": {
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+        "title": "EU AI Act",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.696875+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-019.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-020",
+      "index": 20,
+      "source": {
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "title": "NIST AI RMF",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.696881+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-020.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-021",
+      "index": 21,
+      "source": {
+        "url": "https://arxiv.org/html/2511.14136v1",
+        "title": "CLEAR Framework (arXiv 2511.14136)",
+        "type": "pdf",
+        "accessed_at": "2026-03-09T17:06:29.696886+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-021.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-022",
+      "index": 22,
+      "source": {
+        "url": "https://www.swebench.com/",
+        "title": "SWE-Bench",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.696893+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-022.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-023",
+      "index": 23,
+      "source": {
+        "url": "https://webarena.dev/",
+        "title": "WebArena",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.696899+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-023.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-024",
+      "index": 24,
+      "source": {
+        "url": "https://arxiv.org/abs/2408.08435",
+        "title": "ADAS (arXiv 2408.08435)",
+        "type": "pdf",
+        "accessed_at": "2026-03-09T17:06:29.696904+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-024.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-025",
+      "index": 25,
+      "source": {
+        "url": "https://arxiv.org/abs/2210.03629",
+        "title": "ReAct (arXiv 2210.03629)",
+        "type": "pdf",
+        "accessed_at": "2026-03-09T17:06:29.696910+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-025.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-026",
+      "index": 26,
+      "source": {
+        "url": "https://arxiv.org/html/2509.23586v1",
+        "title": "AgentDiet Trajectory Reduction (arXiv 2509.23586)",
+        "type": "pdf",
+        "accessed_at": "2026-03-09T17:06:29.696915+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-026.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-027",
+      "index": 27,
+      "source": {
+        "url": "https://arxiv.org/html/2510.03215",
+        "title": "Cache-to-Cache Communication (arXiv 2510.03215)",
+        "type": "pdf",
+        "accessed_at": "2026-03-09T17:06:29.696920+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-027.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-028",
+      "index": 28,
+      "source": {
+        "url": "https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/fncom.2024.1352685/full",
+        "title": "GWT for Agents (Frontiers)",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.696926+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-028.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-029",
+      "index": 29,
+      "source": {
+        "url": "https://blog.langchain.com/context-engineering-for-agents/",
+        "title": "Context Engineering (LangChain)",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.696932+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-029.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-030",
+      "index": 30,
+      "source": {
+        "url": "https://arxiv.org/html/2511.13900v1",
+        "title": "Lost-in-the-Middle (arXiv 2511.13900)",
+        "type": "pdf",
+        "accessed_at": "2026-03-09T17:06:29.696937+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-030.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-031",
+      "index": 31,
+      "source": {
+        "url": "https://arxiv.org/html/2508.02994v1",
+        "title": "Agent-as-Judge (arXiv 2508.02994)",
+        "type": "pdf",
+        "accessed_at": "2026-03-09T17:06:29.696943+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-031.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-032",
+      "index": 32,
+      "source": {
+        "url": "https://redis.io/blog/ai-agent-architecture/",
+        "title": "AI Agent Architecture Patterns (Redis)",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.696948+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-032.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-033",
+      "index": 33,
+      "source": {
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns",
+        "title": "Azure AI Agent Design Patterns",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.696954+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-033.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-034",
+      "index": 34,
+      "source": {
+        "url": "https://docs.cloud.google.com/architecture/choose-design-pattern-agentic-ai-system",
+        "title": "Google Cloud Agentic AI Design",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.696959+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-034.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-035",
+      "index": 35,
+      "source": {
+        "url": "https://arxiv.org/html/2512.04123v1",
+        "title": "Production Deployments (arXiv 2512.04123)",
+        "type": "pdf",
+        "accessed_at": "2026-03-09T17:06:29.696964+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-035.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-036",
+      "index": 36,
+      "source": {
+        "url": "https://cognition.ai/blog/devin-annual-performance-review-2025",
+        "title": "Devin Performance Review (Cognition)",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:06:29.696970+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-036.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    }
+  ],
+  "stats": {
+    "total_citations": 36,
+    "by_type": {
+      "webpage": 28,
+      "pdf": 8
+    },
+    "snapshots_available": 0,
+    "snapshots_failed": 0,
+    "auto_extracted_sources": 36,
+    "avg_anchors_per_citation": 0.0
+  },
+  "meta": {
+    "tags": [
+      "AI-agent",
+      "architecture",
+      "framework",
+      "multi-agent"
+    ],
+    "category": "技術研究",
+    "status": "imported",
+    "import_method": "smart_import"
+  }
+}

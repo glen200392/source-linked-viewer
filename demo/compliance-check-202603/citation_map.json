@@ -1,0 +1,110 @@
+{
+  "$schema": "source-linked-viewer/citation-map/v2",
+  "title": "法規合規自評報告 — 2026-03-02",
+  "report_id": "reports",
+  "generated_at": "2026-03-09T16:50:21.785493+00:00",
+  "generator": "cortex_to_slv/v1",
+  "meta": {
+    "tags": [
+      "PIPL",
+      "compliance",
+      "self-assessment"
+    ],
+    "category": "AI 治理",
+    "status": "imported",
+    "import_method": "cortex_to_slv",
+    "summary": "執行者: data-governance-agent (compliance_check mode, first run)",
+    "original_format": "cortex_verified"
+  },
+  "citations": [
+    {
+      "id": "ref-001",
+      "index": 1,
+      "source": {
+        "url": "",
+        "title": "KB ri_20260226_011",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.785256+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "meta": {
+        "verified_label": "KB ri_20260226_011",
+        "authority": "",
+        "independence": "",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-002",
+      "index": 2,
+      "source": {
+        "url": "",
+        "title": "KB ri_20260226_007",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.785409+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "meta": {
+        "verified_label": "KB ri_20260226_007",
+        "authority": "",
+        "independence": "",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-003",
+      "index": 3,
+      "source": {
+        "url": "",
+        "title": "KB ri_20260302_002",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.785414+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "meta": {
+        "verified_label": "KB ri_20260302_002",
+        "authority": "",
+        "independence": "",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    }
+  ],
+  "stats": {
+    "total_citations": 3,
+    "by_type": {
+      "webpage": 3
+    },
+    "snapshots_available": 0,
+    "snapshots_failed": 0,
+    "markers_matched": 0,
+    "markers_unmatched": 3,
+    "extra_sources": 0
+  }
+}

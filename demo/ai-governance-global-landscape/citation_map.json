@@ -1,0 +1,1048 @@
+{
+  "$schema": "source-linked-viewer/citation-map/v2",
+  "title": "AI 治理全球法規全景研究報告",
+  "report_id": "reports",
+  "generated_at": "2026-03-09T16:50:21.725202+00:00",
+  "generator": "cortex_to_slv/v1",
+  "meta": {
+    "tags": [
+      "AI-governance",
+      "EU-AI-Act",
+      "PIPL",
+      "compliance"
+    ],
+    "category": "AI 治理",
+    "status": "imported",
+    "import_method": "cortex_to_slv",
+    "summary": "作者: Glen Ho (DTO Intelligence System)",
+    "original_format": "cortex_verified"
+  },
+  "citations": [
+    {
+      "id": "ref-001",
+      "index": 1,
+      "source": {
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-act-standardisation",
+        "title": "EC: AI Act Standardisation",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.724633+00:00",
+        "author": "",
+        "publication_date": "持續更新"
+      },
+      "meta": {
+        "verified_label": "EC Digital Omnibus proposal",
+        "authority": "high",
+        "independence": "high",
+        "match_score": 0.7
+      },
+      "snapshot": {
+        "file": "snapshots/ref-001.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-002",
+      "index": 2,
+      "source": {
+        "url": "https://www.mayerbrown.com/en/insights/publications/2025/10/artificial-intelligence-a-brave-new-world-china-formulates-new-ai-global--governance-action-plan-and-issues-draft-ethics-rules-and-ai-labelling-rules",
+        "title": "Mayer Brown: China AI Governance Action Plan",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.724973+00:00",
+        "author": "",
+        "publication_date": "2025.10"
+      },
+      "meta": {
+        "verified_label": "CAC Measures 2025.10",
+        "authority": "high",
+        "independence": "medium",
+        "match_score": 0.5
+      },
+      "snapshot": {
+        "file": "snapshots/ref-002.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-003",
+      "index": 3,
+      "source": {
+        "url": "https://artificialintelligenceact.eu/annex/3/",
+        "title": "EU AI Act Annex III 原文",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.724977+00:00",
+        "author": "",
+        "publication_date": "有效"
+      },
+      "meta": {
+        "verified_label": "EU AI Act Art.6 + Annex III",
+        "authority": "high",
+        "independence": "high",
+        "match_score": 0.9142857142857144
+      },
+      "snapshot": {
+        "file": "snapshots/ref-003.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-004",
+      "index": 4,
+      "source": {
+        "url": "https://artificialintelligenceact.eu/article/25/",
+        "title": "EU AI Act Article 25 原文",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.724979+00:00",
+        "author": "",
+        "publication_date": "有效（2024 通過）"
+      },
+      "meta": {
+        "verified_label": "EU AI Act Art.25",
+        "authority": "high",
+        "independence": "high",
+        "match_score": 1.0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-004.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-005",
+      "index": 5,
+      "source": {
+        "url": "",
+        "title": "多國立法追蹤",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.724983+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "meta": {
+        "verified_label": "多國立法追蹤",
+        "authority": "",
+        "independence": "",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-006",
+      "index": 6,
+      "source": {
+        "url": "https://jtc21.eu/wp-content/uploads/2025/06/CEN-CENELEC-JTC21-AI-Standards-Complete-Detailed-Overview.pdf",
+        "title": "CEN-CENELEC JTC21: AI Standards Overview",
+        "type": "pdf",
+        "accessed_at": "2026-03-09T16:50:21.724988+00:00",
+        "author": "",
+        "publication_date": "2025"
+      },
+      "meta": {
+        "verified_label": "CEN-CENELEC JTC21",
+        "authority": "high",
+        "independence": "high",
+        "match_score": 1.2
+      },
+      "snapshot": {
+        "file": "snapshots/ref-006.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-007",
+      "index": 7,
+      "source": {
+        "url": "https://artificialintelligenceact.eu/article/6/",
+        "title": "EU AI Act Article 6 原文",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.724991+00:00",
+        "author": "",
+        "publication_date": "有效"
+      },
+      "meta": {
+        "verified_label": "Art.25 原文",
+        "authority": "high",
+        "independence": "high",
+        "match_score": 0.5333333333333333
+      },
+      "snapshot": {
+        "file": "snapshots/ref-007.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-008",
+      "index": 8,
+      "source": {
+        "url": "",
+        "title": "Beijing CAC notice",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.724994+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "meta": {
+        "verified_label": "Beijing CAC notice",
+        "authority": "",
+        "independence": "",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-009",
+      "index": 9,
+      "source": {
+        "url": "https://www.whitecase.com/insight-alert/chinas-standard-contract-outbound-cross-border-transfer-personal-information-effect",
+        "title": "White & Case: China SCC",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.724999+00:00",
+        "author": "",
+        "publication_date": "2023"
+      },
+      "meta": {
+        "verified_label": "Shanghai enforcement case",
+        "authority": "high",
+        "independence": "medium",
+        "match_score": 0.5333333333333333
+      },
+      "snapshot": {
+        "file": "snapshots/ref-009.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-010",
+      "index": 10,
+      "source": {
+        "url": "https://iapp.org/news/a/european-commission-misses-deadline-for-ai-act-guidance-on-high-risk-systems",
+        "title": "IAPP: EC 錯過高風險系統指南截止日",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.725003+00:00",
+        "author": "",
+        "publication_date": "2026.02"
+      },
+      "meta": {
+        "verified_label": "IAPP: EC 錯過高風險系統指南截止日",
+        "authority": "high",
+        "independence": "high",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-010.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-011",
+      "index": 11,
+      "source": {
+        "url": "https://www.orrick.com/en/Insights/2025/11/The-EU-AI-Act-6-Steps-to-Take-Before-2-August-2026",
+        "title": "Orrick: EU AI Act 6 Steps",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.725006+00:00",
+        "author": "",
+        "publication_date": "2025.11"
+      },
+      "meta": {
+        "verified_label": "Orrick: EU AI Act 6 Steps",
+        "authority": "high",
+        "independence": "medium",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-011.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-012",
+      "index": 12,
+      "source": {
+        "url": "https://www.cooley.com/news/insight/2025/2025-11-24-eu-ai-act-proposed-digital-omnibus-on-ai-will-impact-businesses-ai-compliance-roadmaps",
+        "title": "Cooley: Digital Omnibus on AI",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.725010+00:00",
+        "author": "",
+        "publication_date": "2025.11"
+      },
+      "meta": {
+        "verified_label": "Cooley: Digital Omnibus on AI",
+        "authority": "high",
+        "independence": "medium",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-012.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-013",
+      "index": 13,
+      "source": {
+        "url": "https://www.dataguard.com/eu-ai-act/timeline",
+        "title": "DataGuard: EU AI Act Timeline",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.725014+00:00",
+        "author": "",
+        "publication_date": "2025"
+      },
+      "meta": {
+        "verified_label": "DataGuard: EU AI Act Timeline",
+        "authority": "medium",
+        "independence": "medium",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-013.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-014",
+      "index": 14,
+      "source": {
+        "url": "https://trilateralresearch.com/responsible-ai/eu-ai-act-implementation-timeline-mapping-your-models-to-the-new-risk-tiers",
+        "title": "Trilateral Research: AI Act Timeline",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.725018+00:00",
+        "author": "",
+        "publication_date": "2025"
+      },
+      "meta": {
+        "verified_label": "Trilateral Research: AI Act Timeline",
+        "authority": "medium",
+        "independence": "high",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-014.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-015",
+      "index": 15,
+      "source": {
+        "url": "https://www.arnoldporter.com/en/perspectives/advisories/2025/11/china-issues-clarifications-cross-border-data-transfer-rules",
+        "title": "Arnold & Porter: PIPL Cross-border Clarifications",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.725021+00:00",
+        "author": "",
+        "publication_date": "2025.11"
+      },
+      "meta": {
+        "verified_label": "Arnold & Porter: PIPL Cross-border Clarifications",
+        "authority": "high",
+        "independence": "medium",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-015.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-016",
+      "index": 16,
+      "source": {
+        "url": "https://chambers.com/articles/the-final-piece-of-chinas-cross-border-personal-information-transfer-regulations",
+        "title": "Chambers: PIPL Cross-border Final Piece",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.725024+00:00",
+        "author": "",
+        "publication_date": "2025"
+      },
+      "meta": {
+        "verified_label": "Chambers: PIPL Cross-border Final Piece",
+        "authority": "high",
+        "independence": "high",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-016.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-017",
+      "index": 17,
+      "source": {
+        "url": "https://www.china-briefing.com/news/china-cross-border-data-transfer-certification/",
+        "title": "China Briefing: Cross-border Certification",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.725027+00:00",
+        "author": "",
+        "publication_date": "2025"
+      },
+      "meta": {
+        "verified_label": "China Briefing: Cross-border Certification",
+        "authority": "medium",
+        "independence": "medium",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-017.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-018",
+      "index": 18,
+      "source": {
+        "url": "https://www.rplawyers.com/china-finalizes-certification-route-for-cross-border-data-transfer/",
+        "title": "R&P China Lawyers: Certification Route",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.725031+00:00",
+        "author": "",
+        "publication_date": "2025"
+      },
+      "meta": {
+        "verified_label": "R&P China Lawyers: Certification Route",
+        "authority": "high",
+        "independence": "medium",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-018.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-019",
+      "index": 19,
+      "source": {
+        "url": "https://www.jonesday.com/en/insights/2025/12/taiwan-passes-major-amendments-to-the-personal-data-protection-act",
+        "title": "Jones Day: Taiwan PDPA Amendment",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.725034+00:00",
+        "author": "",
+        "publication_date": "2025.12"
+      },
+      "meta": {
+        "verified_label": "Jones Day: Taiwan PDPA Amendment",
+        "authority": "high",
+        "independence": "medium",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-019.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-020",
+      "index": 20,
+      "source": {
+        "url": "https://www.is-law.com/en/brief-analysis-of-taiwans-pdpa-amendment/",
+        "title": "IS-Law: Taiwan PDPA AI Governance",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.725039+00:00",
+        "author": "",
+        "publication_date": "2025"
+      },
+      "meta": {
+        "verified_label": "IS-Law: Taiwan PDPA AI Governance",
+        "authority": "medium",
+        "independence": "medium",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-020.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-021",
+      "index": 21,
+      "source": {
+        "url": "https://stellexlaw.com/en/taiwan-personal-data-protection-act-amendments-2025/",
+        "title": "Stellex Law: Taiwan PDPA 2025",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.725043+00:00",
+        "author": "",
+        "publication_date": "2025"
+      },
+      "meta": {
+        "verified_label": "Stellex Law: Taiwan PDPA 2025",
+        "authority": "medium",
+        "independence": "medium",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-021.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-022",
+      "index": 22,
+      "source": {
+        "url": "https://fosrlaw.com/2025/ai-data-privacy-thailand-2025/",
+        "title": "FOSR Law: Thailand AI Regulation",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.725046+00:00",
+        "author": "",
+        "publication_date": "2025"
+      },
+      "meta": {
+        "verified_label": "FOSR Law: Thailand AI Regulation",
+        "authority": "medium",
+        "independence": "medium",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-022.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-023",
+      "index": 23,
+      "source": {
+        "url": "https://iapp.org/news/a/notes-from-the-asia-pacific-region-strong-start-to-2026-for-china-s-data-ai-governance-landscape",
+        "title": "IAPP: China Data/AI Governance 2026",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.725050+00:00",
+        "author": "",
+        "publication_date": "2026.01"
+      },
+      "meta": {
+        "verified_label": "IAPP: China Data/AI Governance 2026",
+        "authority": "high",
+        "independence": "high",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-023.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-024",
+      "index": 24,
+      "source": {
+        "url": "https://www.whitecase.com/insight-our-thinking/ai-watch-global-regulatory-tracker-china",
+        "title": "White & Case: China AI Tracker",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.725054+00:00",
+        "author": "",
+        "publication_date": "持續更新"
+      },
+      "meta": {
+        "verified_label": "White & Case: China AI Tracker",
+        "authority": "high",
+        "independence": "medium",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-024.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-025",
+      "index": 25,
+      "source": {
+        "url": "https://fpf.org/blog/south-koreas-new-ai-framework-act-a-balancing-act-between-innovation-and-regulation/",
+        "title": "FPF: Korea AI Framework Act",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.725057+00:00",
+        "author": "",
+        "publication_date": "2024"
+      },
+      "meta": {
+        "verified_label": "FPF: Korea AI Framework Act",
+        "authority": "high",
+        "independence": "high",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-025.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-026",
+      "index": 26,
+      "source": {
+        "url": "https://www.nature.com/articles/s41599-024-03470-y",
+        "title": "Nature: Korea PIPA Automated Decision",
+        "type": "pdf",
+        "accessed_at": "2026-03-09T16:50:21.725060+00:00",
+        "author": "",
+        "publication_date": "2024"
+      },
+      "meta": {
+        "verified_label": "Nature: Korea PIPA Automated Decision",
+        "authority": "high",
+        "independence": "high",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-026.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-027",
+      "index": 27,
+      "source": {
+        "url": "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/press-releases/2024/public-consult-model-ai-governance-framework-genai",
+        "title": "Singapore IMDA: Model AI Gov Framework",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.725063+00:00",
+        "author": "",
+        "publication_date": "2024"
+      },
+      "meta": {
+        "verified_label": "Singapore IMDA: Model AI Gov Framework",
+        "authority": "high",
+        "independence": "medium",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-027.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-028",
+      "index": 28,
+      "source": {
+        "url": "https://cloudsecurityalliance.org/blog/2025/01/29/how-can-iso-iec-42001-nist-ai-rmf-help-comply-with-the-eu-ai-act",
+        "title": "CSA: ISO 42001 + NIST AI RMF for EU AI Act",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.725067+00:00",
+        "author": "",
+        "publication_date": "2025.01"
+      },
+      "meta": {
+        "verified_label": "CSA: ISO 42001 + NIST AI RMF for EU AI Act",
+        "authority": "medium",
+        "independence": "medium",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-028.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-029",
+      "index": 29,
+      "source": {
+        "url": "https://blog.rsisecurity.com/nist-ai-risk-management-framework-iso-42001-crosswalk/",
+        "title": "RSI Security: NIST AI RMF & ISO 42001 Crosswalk",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.725070+00:00",
+        "author": "",
+        "publication_date": "2025"
+      },
+      "meta": {
+        "verified_label": "RSI Security: NIST AI RMF & ISO 42001 Crosswalk",
+        "authority": "medium",
+        "independence": "medium",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-029.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-030",
+      "index": 30,
+      "source": {
+        "url": "https://www.standardfusion.com/blog/key-differences-between-iso-42001-and-nist-ai-rmf",
+        "title": "StandardFusion: ISO 42001 vs NIST AI RMF",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.725074+00:00",
+        "author": "",
+        "publication_date": "2025"
+      },
+      "meta": {
+        "verified_label": "StandardFusion: ISO 42001 vs NIST AI RMF",
+        "authority": "medium",
+        "independence": "medium",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-030.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-031",
+      "index": 31,
+      "source": {
+        "url": "https://airc.nist.gov/docs/NIST_AI_RMF_to_ISO_IEC_42001_Crosswalk.pdf",
+        "title": "NIST: AI RMF to ISO 42001 Crosswalk",
+        "type": "pdf",
+        "accessed_at": "2026-03-09T16:50:21.725078+00:00",
+        "author": "",
+        "publication_date": "2024"
+      },
+      "meta": {
+        "verified_label": "NIST: AI RMF to ISO 42001 Crosswalk",
+        "authority": "high",
+        "independence": "high",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-031.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-032",
+      "index": 32,
+      "source": {
+        "url": "https://iotsecurityinstitute.com/iotsec/iot-security-institute-cyber-security-articles/204-iec-62443-in-action-cybersecurity-for-smart-manufacturing",
+        "title": "IoT Security Institute: IEC 62443 Smart Mfg",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.725081+00:00",
+        "author": "",
+        "publication_date": "2025"
+      },
+      "meta": {
+        "verified_label": "IoT Security Institute: IEC 62443 Smart Mfg",
+        "authority": "medium",
+        "independence": "high",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-032.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-033",
+      "index": 33,
+      "source": {
+        "url": "https://www.europarl.europa.eu/legislative-train/theme-a-europe-fit-for-the-digital-age/file-ai-liability-directive",
+        "title": "EU Parliament: AI Liability Directive",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.725084+00:00",
+        "author": "",
+        "publication_date": "持續更新"
+      },
+      "meta": {
+        "verified_label": "EU Parliament: AI Liability Directive",
+        "authority": "high",
+        "independence": "high",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-033.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-034",
+      "index": 34,
+      "source": {
+        "url": "https://www.goodwinlaw.com/en/insights/publications/2025/02/alerts-practices-aiml-eu-updates-its-product-liability-regime",
+        "title": "Goodwin: EU Product Liability AI",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.725087+00:00",
+        "author": "",
+        "publication_date": "2025.02"
+      },
+      "meta": {
+        "verified_label": "Goodwin: EU Product Liability AI",
+        "authority": "high",
+        "independence": "medium",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-034.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-035",
+      "index": 35,
+      "source": {
+        "url": "https://www.wiley.law/alert-BIS-Rescinds-AI-Diffusion-Rule",
+        "title": "Wiley: BIS Rescinds AI Diffusion Rule",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.725090+00:00",
+        "author": "",
+        "publication_date": "2025.05"
+      },
+      "meta": {
+        "verified_label": "Wiley: BIS Rescinds AI Diffusion Rule",
+        "authority": "high",
+        "independence": "medium",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-035.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-036",
+      "index": 36,
+      "source": {
+        "url": "https://iapp.org/news/a/eu-digital-omnibus-analysis-of-key-changes",
+        "title": "IAPP: EU Digital Omnibus Analysis",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.725094+00:00",
+        "author": "",
+        "publication_date": "2025.12"
+      },
+      "meta": {
+        "verified_label": "IAPP: EU Digital Omnibus Analysis",
+        "authority": "high",
+        "independence": "high",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-036.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-037",
+      "index": 37,
+      "source": {
+        "url": "https://www.pwc.com/us/en/services/consulting/cybersecurity-risk-regulatory/library/tech-regulatory-policy-developments/eu-digital-omnibus.html",
+        "title": "PwC: EU Digital Omnibus AI Relief",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.725098+00:00",
+        "author": "",
+        "publication_date": "2025"
+      },
+      "meta": {
+        "verified_label": "PwC: EU Digital Omnibus AI Relief",
+        "authority": "high",
+        "independence": "medium",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-037.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-038",
+      "index": 38,
+      "source": {
+        "url": "https://www.amt-law.com/en/insights/others/publication_0029311_en_001/",
+        "title": "AMT Law: Japan APPI Amendments",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.725101+00:00",
+        "author": "",
+        "publication_date": "2025"
+      },
+      "meta": {
+        "verified_label": "AMT Law: Japan APPI Amendments",
+        "authority": "high",
+        "independence": "medium",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-038.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-039",
+      "index": 39,
+      "source": {
+        "url": "https://practiceguides.chambers.com/practice-guides/artificial-intelligence-2025/japan",
+        "title": "Chambers: Japan AI 2025",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T16:50:21.725103+00:00",
+        "author": "",
+        "publication_date": "2025"
+      },
+      "meta": {
+        "verified_label": "Chambers: Japan AI 2025",
+        "authority": "high",
+        "independence": "high",
+        "match_score": 0
+      },
+      "snapshot": {
+        "file": "snapshots/ref-039.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    }
+  ],
+  "stats": {
+    "total_citations": 39,
+    "by_type": {
+      "webpage": 36,
+      "pdf": 3
+    },
+    "snapshots_available": 0,
+    "snapshots_failed": 0,
+    "markers_matched": 7,
+    "markers_unmatched": 2,
+    "extra_sources": 30
+  }
+}

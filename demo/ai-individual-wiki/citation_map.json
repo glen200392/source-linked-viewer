@@ -1,0 +1,270 @@
+{
+  "$schema": "source-linked-viewer/citation-map/v1",
+  "title": "企業內部 AI-Individual Wiki 研究報告",
+  "report_id": "ai-individual-wiki",
+  "generated_at": "2026-03-09T17:04:55.885242+00:00",
+  "generator": "generate_citation_map/v1",
+  "citations": [
+    {
+      "id": "ref-001",
+      "index": 1,
+      "source": {
+        "url": "https://florinelchis.medium.com/top-10-rag-frameworks-on-github-by-stars-january-2026-e6edff1e0d91",
+        "title": "Top 10 RAG Frameworks on GitHub — Jan 2026",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:04:55.885028+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-001.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-002",
+      "index": 2,
+      "source": {
+        "url": "https://www.firecrawl.dev/blog/best-open-source-rag-frameworks",
+        "title": "15 Best Open-Source RAG Frameworks in 2026 — Firecrawl",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:04:55.885171+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-002.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-003",
+      "index": 3,
+      "source": {
+        "url": "https://enterprise-knowledge.com/enterprise-ai-architecture-series-how-to-build-a-knowledge-intelligence-architecture-part-1/",
+        "title": "Enterprise AI Architecture — Enterprise Knowledge",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:04:55.885183+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-003.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-004",
+      "index": 4,
+      "source": {
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/secure-multitenant-rag",
+        "title": "Secure Multitenant RAG — Microsoft Azure",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:04:55.885191+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-004.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-005",
+      "index": 5,
+      "source": {
+        "url": "https://towardsai.net/p/machine-learning/production-rag-the-chunking-retrieval-and-evaluation-strategies-that-actually-work",
+        "title": "Production RAG Strategies — Towards AI",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:04:55.885197+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-005.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-006",
+      "index": 6,
+      "source": {
+        "url": "https://www.firecrawl.dev/blog/best-chunking-strategies-rag",
+        "title": "Best Chunking Strategies for RAG — Firecrawl",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:04:55.885203+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-006.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-007",
+      "index": 7,
+      "source": {
+        "url": "https://app.ailog.fr/en/blog/guides/choosing-embedding-models",
+        "title": "Choosing Embedding Models — Ailog RAG",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:04:55.885209+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-007.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-008",
+      "index": 8,
+      "source": {
+        "url": "https://customgpt.ai/authentication-methods-enterprise-ai-knowledge-hubs/",
+        "title": "Enterprise AI Authentication — CustomGPT",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:04:55.885215+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-008.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-009",
+      "index": 9,
+      "source": {
+        "url": "https://www.firecrawl.dev/blog/best-vector-databases",
+        "title": "Best Vector Databases 2026 — Firecrawl",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:04:55.885220+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-009.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-010",
+      "index": 10,
+      "source": {
+        "url": "https://www.shakudo.io/blog/top-9-vector-databases",
+        "title": "Top 9 Vector Databases Feb 2026 — Shakudo",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:04:55.885226+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-010.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-011",
+      "index": 11,
+      "source": {
+        "url": "https://huggingface.co/BAAI/bge-m3",
+        "title": "BGE-M3 — BAAI/bge-m3 on Hugging Face",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:04:55.885232+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-011.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    },
+    {
+      "id": "ref-012",
+      "index": 12,
+      "source": {
+        "url": "https://www.bentoml.com/blog/a-guide-to-open-source-embedding-models",
+        "title": "Best Open-Source Embedding Models 2026 — BentoML",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:04:55.885238+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-012.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [],
+      "media": null
+    }
+  ],
+  "stats": {
+    "total_citations": 12,
+    "by_type": {
+      "webpage": 12
+    },
+    "snapshots_available": 0,
+    "snapshots_failed": 0,
+    "auto_extracted_sources": 12,
+    "avg_anchors_per_citation": 0.0
+  },
+  "meta": {
+    "tags": [
+      "AI",
+      "enterprise",
+      "knowledge-management",
+      "wiki"
+    ],
+    "category": "技術研究",
+    "status": "imported",
+    "import_method": "smart_import"
+  }
+}

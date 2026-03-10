@@ -1,0 +1,1412 @@
+{
+  "$schema": "source-linked-viewer/citation-map/v2",
+  "title": "AI 模型全景研究報告：從語言模型到世界模型的演進",
+  "report_id": "Desktop",
+  "generated_at": "2026-03-09T17:02:47.170181+00:00",
+  "generator": "smart_import/v1",
+  "meta": {
+    "tags": [
+      "AI",
+      "LLM",
+      "None",
+      "landscape",
+      "model",
+      "world-model"
+    ],
+    "category": "技術研究",
+    "import_method": "smart_import"
+  },
+  "citations": [
+    {
+      "id": "ref-001",
+      "index": 1,
+      "source": {
+        "url": "https://research.aimultiple.com/llm-latency-benchmark/",
+        "title": "LLM Latency Benchmark by Use Cases in 2026",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170076+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-001.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": "合計約 2-5 秒完成一個動作，而人類只需 200ms。"
+          },
+          "source_selectors": [
+            {
+              "type": "TextQuoteSelector",
+              "exact": "LLM Latency Benchmark by Use Cases in 2026 Agentic AI CATEGORIES MCP AI Coding AI Hardware AI Agents LLMs AI Foundations RAG Agentic AI Frameworks Browse Categories Browser MCP MCP Gateway Code Execut",
+              "prefix": "",
+              "suffix": "ion with MCP Memory MCP Cybersec"
+            }
+          ],
+          "_match_method": "bitap-title"
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-002",
+      "index": 2,
+      "source": {
+        "url": "https://www.oreateai.com/blog/understanding-human-reaction-time-what-the-numbers-reveal-8638e0f32a15607503bfe85436b55628",
+        "title": "Oreate AI",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170087+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-002.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": "合計約 2-5 秒完成一個動作，而人類只需 200ms。"
+          },
+          "source_selectors": [
+            {
+              "type": "TextQuoteSelector",
+              "exact": "Oreate AI We apologize, Oreate is currently not supported in your country or region.",
+              "prefix": "",
+              "suffix": "Go to homepage"
+            }
+          ],
+          "_match_method": "bitap-title"
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-003",
+      "index": 3,
+      "source": {
+        "url": "https://blog.roboflow.com/vision-transformers/",
+        "title": "Vision Transformers Explained: The Future of Computer Vision?",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170090+00:00",
+        "author": "",
+        "publication_date": "2025-04-17"
+      },
+      "snapshot": {
+        "file": "snapshots/ref-003.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": "- LLM 逐 token 生成：Transformer 必須等第 9 個 token 計算完才能預測第 10 個，這是自迴歸解碼的固有限制。 - 人類並行視覺：數百萬感光細胞同時處理整個場景，搭配平"
+          },
+          "source_selectors": [
+            {
+              "type": "TextQuoteSelector",
+              "exact": "Vision Transformers Explained: The Future of Computer Vision?",
+              "prefix": "",
+              "suffix": "Products Platform Deploy Run mod"
+            }
+          ],
+          "_match_method": "bitap-title"
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-004",
+      "index": 4,
+      "source": {
+        "url": "https://arxiv.org/html/2511.19021v1",
+        "title": "Dynamic Granularity Matters: Rethinking Vision Transformers Beyond Fixed Patch Splitting",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170093+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-004.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": "- LLM 逐 token 生成：Transformer 必須等第 9 個 token 計算完才能預測第 10 個，這是自迴歸解碼的固有限制。 - 人類並行視覺：數百萬感光細胞同時處理整個場景，搭配平"
+          },
+          "source_selectors": [
+            {
+              "type": "TextQuoteSelector",
+              "exact": "Dynamic Granularity Matters: Rethinking Vision Transformers Beyond Fixed Patch Splitting 1 Introduction 2 Related Works 3 Methodology 3.1 Formulation 3.2 Coarse-grained Complexity Extraction 3.3 Fine-",
+              "prefix": "",
+              "suffix": "grained Attention Computation 4 "
+            }
+          ],
+          "_match_method": "bitap-title"
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-005",
+      "index": 5,
+      "source": {
+        "url": "https://arxiv.org/pdf/2509.25370",
+        "title": "2509.25370",
+        "type": "pdf",
+        "accessed_at": "2026-03-09T17:02:47.170095+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-005.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-006",
+      "index": 6,
+      "source": {
+        "url": "https://wand.ai/blog/compounding-error-effect-in-large-language-models-a-growing-challenge",
+        "title": "Compounding Error Effect in Large Language Models: A Growing Challenge",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170097+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-006.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": "具體失敗模式： 1. 狀態幻覺：模型誤讀畫面狀態（如按鈕看起來已點但實際未觸發），導致錯誤的下一步 2. 目標漂移：早期錯誤累積後，Agent 忘記原始目標 3. 迴圈陷阱：Agent 重複點擊同一元"
+          },
+          "source_selectors": [
+            {
+              "type": "TextQuoteSelector",
+              "exact": "Compounding Error Effect in Large Language Models: A Growing Challenge Skip to content Franklin Templeton Deploys AI Workforce at Scale with Wand See how one of the world’s leading asset manager evolv",
+              "prefix": "",
+              "suffix": "ed from pilots to production → R"
+            }
+          ],
+          "_match_method": "bitap-title"
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-007",
+      "index": 7,
+      "source": {
+        "url": "https://arxiv.org/abs/2404.07972",
+        "title": "[2404.07972] OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170099+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-007.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": "關鍵觀察： - 網頁任務（83-97%）已接近「解決」，但桌面環境（38-75%）仍有巨大差距 - 2024→2025 的進步驚人：Claude 在 OSWorld 從 14.9% 飆升到 72.5%"
+          },
+          "source_selectors": [
+            {
+              "type": "TextQuoteSelector",
+              "exact": "[2404.07972] OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments Skip to main content We gratefully acknowledge support from the Simons Foundation, member instit",
+              "prefix": "",
+              "suffix": "utions , and all contributors. D"
+            }
+          ],
+          "_match_method": "bitap-title"
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-008",
+      "index": 8,
+      "source": {
+        "url": "https://leaderboard.steel.dev/",
+        "title": "AI Browser Agent Leaderboard | Steel.dev",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170101+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-008.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": "關鍵觀察： - 網頁任務（83-97%）已接近「解決」，但桌面環境（38-75%）仍有巨大差距 - 2024→2025 的進步驚人：Claude 在 OSWorld 從 14.9% 飆升到 72.5%"
+          },
+          "source_selectors": [
+            {
+              "type": "TextQuoteSelector",
+              "exact": "AI Browser Agent Leaderboard | Steel.dev [GITHUB ] [STEEL-BROWSER ] [DISCORD ] Steel.dev ® Browser Agent Leaderboard See how various AI browser agents stack up based on their accuracy in completing we",
+              "prefix": "",
+              "suffix": "b-based tasks on the WebVoyager "
+            }
+          ],
+          "_match_method": "bitap-title"
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-009",
+      "index": 9,
+      "source": {
+        "url": "https://arxiv.org/html/2506.03143v1",
+        "title": "GUI-Actor: Coordinate-Free Visual Grounding for GUI Agents",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170104+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-009.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-010",
+      "index": 10,
+      "source": {
+        "url": "https://www.microsoft.com/en-us/research/articles/omniparser-v2-turning-any-llm-into-a-computer-use-agent/",
+        "title": "OmniParser V2: Turning Any LLM into a Computer Use Agent - Microsoft Research",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170106+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-010.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-011",
+      "index": 11,
+      "source": {
+        "url": "https://arxiv.org/html/2410.05243v1",
+        "title": "Navigating the Digital World as Humans Do: Universal Visual Grounding for GUI Agents",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170108+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-011.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-012",
+      "index": 12,
+      "source": {
+        "url": "https://machinelearning.apple.com/research/ferret-ui-2",
+        "title": "Ferret-UI 2: Mastering Universal User Interface Understanding Across Platforms",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170110+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-012.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-013",
+      "index": 13,
+      "source": {
+        "url": "https://www.anthropic.com/news/3-5-models-and-computer-use",
+        "title": "Anthropic Computer Use",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170112+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-013.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-014",
+      "index": 14,
+      "source": {
+        "url": "https://openai.com/index/introducing-operator/",
+        "title": "OpenAI Operator",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170114+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-014.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-015",
+      "index": 15,
+      "source": {
+        "url": "https://deepmind.google/models/project-mariner/",
+        "title": "Project Mariner",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170116+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-015.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-016",
+      "index": 16,
+      "source": {
+        "url": "https://courses.cs.umbc.edu/471/papers/turing.pdf",
+        "title": "Computing Machinery and Intelligence (Turing, 1950)",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170118+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-016.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-017",
+      "index": 17,
+      "source": {
+        "url": "https://proceedings.mlr.press/v5/salakhutdinov09a/salakhutdinov09a.pdf",
+        "title": "salakhutdinov09a.pdf",
+        "type": "pdf",
+        "accessed_at": "2026-03-09T17:02:47.170120+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-017.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-018",
+      "index": 18,
+      "source": {
+        "url": "https://arxiv.org/abs/1706.03762",
+        "title": "Attention Is All You Need",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170122+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-018.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-019",
+      "index": 19,
+      "source": {
+        "url": "https://arxiv.org/abs/2312.00752",
+        "title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170123+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-019.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-020",
+      "index": 20,
+      "source": {
+        "url": "https://arxiv.org/abs/2305.13048",
+        "title": "RWKV: Reinventing RNNs for the Transformer Era",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170125+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-020.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-021",
+      "index": 21,
+      "source": {
+        "url": "https://arxiv.org/abs/2404.19756",
+        "title": "KAN: Kolmogorov-Arnold Networks",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170127+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-021.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-022",
+      "index": 22,
+      "source": {
+        "url": "https://arxiv.org/abs/1803.10122",
+        "title": "World Models",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170128+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-022.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-023",
+      "index": 23,
+      "source": {
+        "url": "https://worldmodels.github.io/",
+        "title": "World Models",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170130+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-023.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-024",
+      "index": 24,
+      "source": {
+        "url": "https://openai.com/index/video-generation-models-as-world-simulators/",
+        "title": "Video generation models as world simulators",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170132+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-024.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-025",
+      "index": 25,
+      "source": {
+        "url": "https://blog.google/technology/google-labs/video-image-generation-update-december-2024/",
+        "title": "State-of-the-art video and image generation with Veo 2 and Imagen 3",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170134+00:00",
+        "author": "",
+        "publication_date": "2024-12-16"
+      },
+      "snapshot": {
+        "file": "snapshots/ref-025.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-026",
+      "index": 26,
+      "source": {
+        "url": "https://runwayml.com/research/introducing-gen-3-alpha",
+        "title": "Runway Research | Introducing Gen-3 Alpha: A New Frontier for Video Generation",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170136+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-026.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-027",
+      "index": 27,
+      "source": {
+        "url": "https://deepmind.google/blog/genie-2-a-large-scale-foundation-world-model/",
+        "title": "Genie 2: A large-scale foundation world model",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170138+00:00",
+        "author": "Jack Parker-Holder, Philip Ball, Jake Bruce, Vibhavari Dasagi, Kristian Holsheimer, Christos Kaplanis, Alexandre Moufarek, Guy Scully, Jeremy Shar, Jimmy Shi, Stephen Spencer, Jessica Yung, Michael Dennis, Sultan Kenjeyev, Shangbang Long, Vlad Mnih,",
+        "publication_date": "2024-12-04"
+      },
+      "snapshot": {
+        "file": "snapshots/ref-027.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-028",
+      "index": 28,
+      "source": {
+        "url": "https://arxiv.org/abs/2408.14837",
+        "title": "Diffusion Models Are Real-Time Game Engines",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170140+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-028.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-029",
+      "index": 29,
+      "source": {
+        "url": "https://arxiv.org/abs/2310.06114",
+        "title": "Learning Interactive Real-World Simulators",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170143+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-029.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-030",
+      "index": 30,
+      "source": {
+        "url": "https://techcrunch.com/2025/11/12/fei-fei-lis-world-labs-speeds-up-the-world-model-race-with-marble-its-first-commercial-product/",
+        "title": "Fei-Fei Li's World Labs speeds up the world model race with Marble, its first commercial product | TechCrunch",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170146+00:00",
+        "author": "Rebecca Bellan",
+        "publication_date": "2025-11-12"
+      },
+      "snapshot": {
+        "file": "snapshots/ref-030.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-031",
+      "index": 31,
+      "source": {
+        "url": "https://arxiv.org/abs/2501.03575",
+        "title": "Cosmos World Foundation Model Platform for Physical AI",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170148+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-031.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-032",
+      "index": 32,
+      "source": {
+        "url": "https://arxiv.org/abs/2506.09985",
+        "title": "V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170150+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-032.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-033",
+      "index": 33,
+      "source": {
+        "url": "https://deepmind.google/blog/rt-2-new-model-translates-vision-and-language-into-action/",
+        "title": "RT-2: New model translates vision and language into action",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170152+00:00",
+        "author": "Yevgen Chebotar, Tianhe Yu",
+        "publication_date": "2023-07-28"
+      },
+      "snapshot": {
+        "file": "snapshots/ref-033.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-034",
+      "index": 34,
+      "source": {
+        "url": "https://danijar.com/project/dreamer4/",
+        "title": "Training Agents Inside of Scalable World Models",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170154+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-034.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-035",
+      "index": 35,
+      "source": {
+        "url": "https://www.nature.com/articles/s41586-025-08744-2",
+        "title": "Mastering diverse control tasks through world models | Nature",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170156+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-035.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-036",
+      "index": 36,
+      "source": {
+        "url": "https://arxiv.org/abs/2210.13382",
+        "title": "Emergent World Representations: Exploring a Sequence Model Trained on a Synthetic Task",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170158+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-036.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-037",
+      "index": 37,
+      "source": {
+        "url": "https://www.neelnanda.io/mechanistic-interpretability/othello",
+        "title": "Actually, Othello-GPT Has A Linear Emergent World Representation — Neel Nanda",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170160+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-037.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-038",
+      "index": 38,
+      "source": {
+        "url": "https://s10251.pcdn.co/pdf/2021-bender-parrots.pdf",
+        "title": "2021-bender-parrots.pdf",
+        "type": "pdf",
+        "accessed_at": "2026-03-09T17:02:47.170162+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-038.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-039",
+      "index": 39,
+      "source": {
+        "url": "https://www.nature.com/articles/nrn2787",
+        "title": "The free-energy principle: a unified brain theory? | Nature Reviews Neuroscience",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170167+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-039.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-040",
+      "index": 40,
+      "source": {
+        "url": "https://openreview.net/pdf?id=BZ5a1r-kVsf",
+        "title": "pdf",
+        "type": "pdf",
+        "accessed_at": "2026-03-09T17:02:47.170169+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-040.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-041",
+      "index": 41,
+      "source": {
+        "url": "https://arxiv.org/abs/2411.02385",
+        "title": "How Far is Video Generation from World Model: A Physical Law Perspective",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170171+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-041.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-042",
+      "index": 42,
+      "source": {
+        "url": "https://nvidianews.nvidia.com/news/foundation-model-isaac-robotics-platform",
+        "title": "NVIDIA Announces Project GR00T Foundation Model for Humanoid Robots and Major Isaac Robotics Platform Update",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170173+00:00",
+        "author": "",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-042.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    },
+    {
+      "id": "ref-043",
+      "index": 43,
+      "source": {
+        "url": "https://aiguide.substack.com/p/llms-and-world-models-part-1",
+        "title": "LLMs and World Models, Part 1",
+        "type": "webpage",
+        "accessed_at": "2026-03-09T17:02:47.170175+00:00",
+        "author": "Melanie Mitchell",
+        "publication_date": ""
+      },
+      "snapshot": {
+        "file": "snapshots/ref-043.html",
+        "format": "singlefile-html",
+        "size_bytes": 0,
+        "hash": ""
+      },
+      "anchors": [
+        {
+          "_orphan": true,
+          "_orphan_reason": "no_snapshot",
+          "report_location": {
+            "section": "",
+            "paragraph": 0,
+            "text_fragment": ""
+          },
+          "source_selectors": []
+        }
+      ],
+      "media": null
+    }
+  ],
+  "stats": {
+    "total_citations": 43,
+    "by_type": {
+      "webpage": 39,
+      "pdf": 4
+    },
+    "snapshots_available": 0,
+    "snapshots_failed": 0,
+    "sources_enriched": 39,
+    "sources_no_url": 0,
+    "anchors_inline_quotes": 0,
+    "anchors_fuzzy_matched": 7,
+    "anchors_orphaned": 36,
+    "anchors_enriched": 7,
+    "anchor_coverage": 0.16
+  }
+}
